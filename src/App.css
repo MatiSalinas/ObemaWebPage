@@ -1,0 +1,214 @@
+@font-face { font-family: 'openSans'; 
+  src: url('/fonts/openSans-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'openSans-Bold'; 
+  src: url('/fonts/openSans-Bold.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+  @font-face { font-family: 'openSans-l'; 
+    src: url('/fonts/openSans-Light.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'openSans-EB'; 
+  src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+
+@font-face { font-family: 'poppins'; 
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+html{
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'openSans';
+}
+h1, h4{
+  font-family: 'openSans-Bold';
+}
+.light{
+  font-family: 'openSans-l';
+}
+a{
+  all: unset;
+}
+.infoP, h3{
+  font-family: 'poppins';
+}
+button{
+  font-family: 'poppins';
+}
+nav{
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0D426D;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 5rem;
+}
+.logo img{
+  width: 100%;
+}
+.secciones{
+  font-family: 'openSans';
+  display: flex;
+  gap: 1rem;
+  color: #f2f2f2;
+  margin-right: 5rem;
+}
+
+footer{
+  width: 99%;
+  display: flex;
+  background-color: #0D426D;
+  justify-content: space-around;
+  align-items: center;
+  color: #f2f2f2;
+  padding: 1%;
+}
+.logosRedesFooter{
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.redesFooter,.contactoFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.formFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: -8rem;
+  gap: 4px;
+}
+.formFooter label{
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.formFooterButton{
+  background-color:#CCCCCC ;
+  
+  border-radius: 20px;
+  height: 2rem;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 15px;
+}
+
+#emailFooter{
+  all: unset;
+  background-color: #f2f2f2;
+  color: #000;
+  height:2rem;
+  border-radius: 20px;
+  width: 20rem;
+  padding-left: 10px;
+  
+}
+.logosRedesFooter img{
+  width: 2rem;
+}
+
+
+
+.tituloHero{
+  font-family: 'openSans-EB';
+  text-shadow: 5px 4px 2px #000;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.containerInicio{
+  height: 150vh;
+}
+
+.heroLandScape{
+  height: 55vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #f2f2f2;
+}
+.heroLandScape p {
+  font-family: 'poppins';
+  margin-right: 8rem;
+}
+.videoLandScape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.botonesLandScape{
+  display: flex;
+  gap: 2rem;
+  font-family: 'poppins';
+}
+
+.botonLS{
+  background-color: #0D2D43;
+  color: #f2f2f2;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 30px;
+  border: 1px solid #f2f3f4;
+}
+.franjaGris{
+  width: 100%;
+  height: 4rem;
+  background-color: #808080;
+
+}
+.rubros{
+  display: flex;
+  width: 100%;
+  background-color: #CCCCCC;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  padding-top:2rem;
+}
+.rubro{ 
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.tituloYtextoRubro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.rubroP{
+  font-family: 'poppins';
+  font-size: smaller;
+  text-align:justify ;
+}
