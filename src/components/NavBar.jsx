@@ -4,8 +4,10 @@ function NavBar(){
     return (
         <nav>
         <div className="logo">
+            <Link to='/'>
             <img src={logo} alt="LOGO OBEMA"  />
-            <Link to='/'></Link>
+            
+            </Link>
         </div>
         <div className="secciones">
             <Link to='/servicios'>SERVICIOS</Link>

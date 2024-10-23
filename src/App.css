@@ -21,6 +21,7 @@ html{
   padding: 0;
   font-family: 'openSans';
 }
+
 h1, h4{
   font-family: 'openSans-Bold';
 }
@@ -61,6 +62,178 @@ nav{
   color: #f2f2f2;
   margin-right: 5rem;
 }
+
+
+
+.tituloHero{
+  font-family: 'openSans-EB';
+  text-shadow: 5px 4px 2px #000;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.containerInicio{
+  height: 400vh;
+}
+
+.heroLandScape{
+  height: 55vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #f2f2f2;
+}
+.heroLandScape p {
+  font-family: 'poppins';
+  margin-right: 8rem;
+}
+.videoLandScape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.botonesLandScape{
+  display: flex;
+  gap: 2rem;
+  font-family: 'poppins';
+}
+
+.botonLS{
+  background-color: #0D2D43;
+  color: #f2f2f2;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 30px;
+  border: 1px solid #f2f3f4;
+}
+.botonLink{
+  font-family: 'poppins';
+  background-color: #0D2D43;
+  color: #f2f2f2;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 30px;
+
+}
+.franjaGris{
+  width: 100%;
+  height: 7rem;
+  background-color: #808080;
+
+}
+.rubros{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #CCCCCC;
+  justify-content:center;
+  align-items: center;
+  padding: 1rem;
+  padding-top:3.4rem;
+  gap: 2rem;
+  height: fit-content;
+  padding-bottom: 5rem;
+}
+
+.rubroSvgs,.rubroTitulos,.rubroTexto{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  gap: 1rem;
+}
+
+.rubroContent{
+  height: 16rem;
+}
+
+.imgContainer,.rubroTitulos h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 116px;
+}
+
+
+.rubroP{
+  font-family: 'poppins';
+  width: 15rem;
+  text-align: center;
+}
+
+.AboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #0D426D;
+  color: #f2f2f2;
+  font-family: 'poppins';
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.lineaBlanca{
+  width: 18rem;
+  height: 1px;
+  background-color: #f2f2f2;
+}
+.quienesSomos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap: 1rem;
+  width: 70vw;
+}
+.mYv{
+  margin-top: 1rem;
+  display: flex;
+
+}
+.mYv p{
+  text-align: center;
+  font-family: 'poppins';
+}
+.mision, .vision{
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1rem;
+}
+.AboutUs h2{
+  font-size: larger;
+  font-family: 'openSans-EB';
+
+}
+.quienesSomosP{
+  text-align:center;
+}
+
 
 footer{
   width: 99%;
@@ -124,91 +297,282 @@ footer{
   width: 2rem;
 }
 
+.BloqueInicioPortfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
-
-.tituloHero{
-  font-family: 'openSans-EB';
-  text-shadow: 5px 4px 2px #000;
-  font-size: 3rem;
+.BloqueInicioPortfolio h2{
+  width: 33vw;
   text-align: center;
+  font-family: 'openSans';
 }
 
-.containerInicio{
-  height: 150vh;
+.lineaAzul{
+  background-color: #0D426D;
+  height: 2px;
+  width: 15rem;
 }
 
-.heroLandScape{
-  height: 55vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  color: #f2f2f2;
-}
-.heroLandScape p {
-  font-family: 'poppins';
-  margin-right: 8rem;
-}
-.videoLandScape{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-.botonesLandScape{
-  display: flex;
-  gap: 2rem;
-  font-family: 'poppins';
+span{
+  font-family: 'openSans-Bold';
+  font-weight: bolder;
 }
 
-.botonLS{
-  background-color: #0D2D43;
-  color: #f2f2f2;
-  height: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .5rem;
-  border-radius: 30px;
-  border: 1px solid #f2f3f4;
-}
-.franjaGris{
-  width: 100%;
-  height: 4rem;
-  background-color: #808080;
-
-}
-.rubros{
-  display: flex;
-  width: 100%;
-  background-color: #CCCCCC;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  padding-top:2rem;
-}
-.rubro{ 
-  width: 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.tituloYtextoRubro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.azul {
+  width: 20rem;
   
 }
-.rubroP{
+
+.historia{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.historia h1{
+  font-family: 'openSans';
+}
+.historia h2{
+  margin-top: 3rem;
+  text-align: center;
   font-family: 'poppins';
-  font-size: smaller;
-  text-align:justify ;
+  font-weight: 300;
+}
+.historia h2 span{
+  font-weight: 900;
+}
+.lineaAzulHistoria{
+  background-color: #0D426D;
+  border: 1px solid #0D426D;
+  height: 5px;
+  width: 15rem;
+  margin-top: 1rem;
+}
+.lineaHistoria{
+  width: 100vw;
+  height: 6px;
+  background-color: #0D426D;
+}
+.franjaSuperior{
+  width: 100vw;
+  display: flex;
+  margin-top: 1rem;
+
+  justify-content: space-around;
+}
+.franjaInferior{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.nodoSup,.nodoInf,.circuloNodo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nodoSup p, .nodoInf p{
+  height: 3rem;
+  text-align: center;
+  padding: 5px;
+}
+.circuloNodo{
+  margin: 0;
+}
+
+.circulo{
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #0D426D;
+  border-radius: 50%;
+  
+}
+.lineaCirculo{
+  height: 1rem;
+  width: 4px;
+  background-color: #0D426D;
+}
+
+.scrollHistoria::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollHistoria{
+  min-height: fit-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.modulosIndustriales{
+  height: 44vh;
+  width: 100vw;
+  background-color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.imagenModuloIndustrial{
+  background-color: #f2f2f2;
+  height: 30vh;
+  width: 40vw;
+  margin-left: 5vw;
+}
+.infoMI{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  font-family: 'openSans';
+}
+.infoMI h2{
+  font-family: "openSans-EB";
+}
+#MIBL{
+  width: 7rem;
+}
+.lineaAzulMI{
+  width: 9rem;
+  height: 2px;
+  background-color: #0D426D;
+}
+.ventajasBeneficios{
+  background-color: #FFFFFF;
+  height: fit-content;
+  width: 100%;
+  font-family: "openSans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.ventajasBeneficios h2{
+  font-family: "openSans-EB";
+}
+.franjaSvgVB{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 10vh;
+}
+.VBsvg{
+  height: 5rem;
+}
+
+
+.casaModulIndustrial{
+  height: 44vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items:center;
+  justify-content: start;
+  gap: 5rem;
+  padding-left: 10vw;
+}
+.imagenCasaModulo{
+  background-color: #f2f2f2;
+  height: 30vh;
+  width: 40vw;
+  margin-right: -30%;
+}
+.infoMI{
+  height: fit-content;
+  width: fit-content;
+}
+.infoMI p{
+  font-size: 1.4rem;
+}
+.infoMI h2{
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.lineaAzulMC{
+  margin-left: 5rem;
+  width: 20rem;
+  height: 3px;
+  background-color: #0D426D;
+  justify-self: center;
+}
+.containerServicios{
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heroServicios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  background-color: #808080;
+  color: #f2f2f2;
+  gap:1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.logoServicios{
+  width: 20vw;
+}
+.heroServicios p{
+  font-size: 1.5rem;
+  font-family: 'openSans';
+  text-align: center;
+}
+.heroServicios h2{
+  font-family: "openSans-EB";
+  font-size: 2rem;
+}
+.lineaAzulServicios{
+  width:25vw;
+  height: 4px;
+  background-color: #0D426D;
+}
+
+.cuadradosServiciosC{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 7rem;
+}
+
+.cuadradoServicio{
+  width: 40vw;
+  height: 60vh;
+  background-color: #0D426D;
+}
+.tituloTextoServicio{
+  display:flex;
+}
+.imgContainerServicios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 116px;
+  filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(177deg) brightness(105%) contrast(102%);
 }
