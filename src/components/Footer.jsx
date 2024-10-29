@@ -7,7 +7,7 @@ function Footer(){
         <footer>
             <form className="formFooter">
                 <label htmlFor="emailFooter"> Ingrese su correo electrónico aquí
-                    <input type="email" name="emailFooter" id="emailFooter" />
+                    <input type="email" name="emailFooter" id="emailFooter" placeholder='Correo electrónico de contacto'/>
                 </label>
                 <button type="button" className='formFooterButton'>Enviar Consulta</button>
             </form>

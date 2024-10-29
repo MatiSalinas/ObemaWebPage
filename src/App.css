@@ -1,18 +1,19 @@
 @font-face { font-family: 'openSans'; 
-  src: url('/fonts/openSans-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+  src: url('public/fonts/openSans-Regular.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'openSans-Bold'; 
-  src: url('/fonts/openSans-Bold.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+  src: url('public/fonts/openSans-Bold.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
 
   @font-face { font-family: 'openSans-l'; 
-    src: url('/fonts/openSans-Light.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+    src: url('public/fonts/openSans-Light.ttf') ,format('truetype'); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'openSans-EB'; 
-  src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { 
+  font-family: 'openSans-EB'; 
+  src: url('public/fonts/OpenSans-ExtraBold.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
 
 
 @font-face { font-family: 'poppins'; 
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+  src: url('public/fonts/Poppins-Regular.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
 html{
   overflow-x: hidden;
 }
@@ -73,7 +74,7 @@ nav{
 }
 
 .containerInicio{
-  height: 400vh;
+  height:fit-content;
 }
 
 .heroLandScape{
@@ -99,6 +100,15 @@ nav{
   object-fit: cover;
   z-index: -1;
 }
+.moduloTuristico{
+  width: 100%;
+  height: 80vh;
+  background-image: url('/images/casaModular.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:70%;
+}
+
 .botonesLandScape{
   display: flex;
   gap: 2rem;
@@ -243,6 +253,7 @@ footer{
   align-items: center;
   color: #f2f2f2;
   padding: 1%;
+  padding-left: 4rem;
 }
 .logosRedesFooter{
   display: flex;
@@ -312,7 +323,11 @@ footer{
   text-align: center;
   font-family: 'openSans';
 }
-
+.BloqueInicioPortfolio h1{
+  width: 33vw;
+  text-align: center;
+  font-family: 'openSans-Bold';
+}
 .lineaAzul{
   background-color: #0D426D;
   height: 2px;
@@ -479,7 +494,7 @@ span{
 
 
 .casaModulIndustrial{
-  height: 44vh;
+  height: 50vh;
   width: 100vw;
   background-color: #FFFFFF;
   display: flex;
@@ -518,6 +533,7 @@ span{
   width: 100%;
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 5rem;
 }
 .heroServicios{
   display: flex;
@@ -526,7 +542,9 @@ span{
   align-items: center;
   height: fit-content;
   width: 100%;
-  background-color: #808080;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("/images/techoGalpon.jpg");
+  background-size: cover;
+  background-position-y: 100%;
   color: #f2f2f2;
   gap:1rem;
   padding-top: 2rem;
@@ -558,16 +576,32 @@ span{
   flex-wrap: wrap;
   height: fit-content;
   gap: 7rem;
+  color: #f2f2f2;
+  font-family: 'poppins';
 }
-
+.cuadradoServicio p,.cuadradoServicio h3{
+  font-family: 'poppinsHola';
+}
 .cuadradoServicio{
   width: 40vw;
-  height: 60vh;
+  height: fit-content;
   background-color: #0D426D;
+  
+}
+.superiorCuadradoServicio{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 .tituloTextoServicio{
   display:flex;
+  flex-direction: column;
+  
 }
+
 .imgContainerServicios{
   display: flex;
   align-items: center;
@@ -575,4 +609,204 @@ span{
   width: 116px;
   height: 116px;
   filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(177deg) brightness(105%) contrast(102%);
+}
+.imgServicio{
+  width: 100%;
+  position:relative;
+  top: 1rem;
+}
+.containerPorfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #CCCCCC;
+}
+.fondoTopPorfolio{
+
+  width: 100vw;
+  background-color: #646769;
+  color: #f2f3f4;
+  font-family: 'openSans';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+
+}
+.fondoTopPorfolio p{
+  text-align: center;
+  font-size: 1.3rem;
+}
+.fondoTopPorfolio .botonLink{
+  border: 1px solid white;
+}
+.containerCarouselesPortfolio {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 20px 20px; 
+  padding: 5rem;
+}
+.carousel1 { grid-area: 1 / 1 / 3 / 2; 
+}
+.carousel2 { grid-area: 1 / 2 / 2 / 3; }
+.carousel3 { grid-area: 1 / 3 / 2 / 4; }
+.carousel4 { grid-area: 2 / 2 / 3 / 4; }
+.carousel5 { grid-area: 1 / 4 / 3 / 5; }
+
+.carousel1 ,.carousel2,.carousel3,.carousel4,.carousel5{
+  overflow: hidden;
+  position: relative;
+}
+.carousel__container {
+  display: flex;
+  height: 100%;
+}
+.carousel__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+  overflow-y: hidden;
+
+}
+.carousel__viewport{height: 100%;}
+.carousel__slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.containerContacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  z-index: 0;
+}
+.containerTopContacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1)),url('/images/perrito.jpg');
+  color: #f2f2f2;
+  width: 100%;
+  background-position: center;
+  gap: 1rem;
+  
+  height:80vh;
+}
+.containerTopContacto h1{
+  font-size: 2.5rem;
+  font-family: 'openSans-Bold';
+}
+.containerTopContacto p{
+  font-size: 1.4rem;
+  font-family: 'openSans';
+}
+.contactoForm{
+  padding: 1rem;
+  height: fit-content;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  width: 50vw;
+  color: #000;
+  border-radius: 1rem;
+  gap: 2rem;
+
+}
+.labelInputForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.labelInputForm label{
+  margin-left: 1rem;
+}
+input,
+input::before,
+input::after {
+  box-sizing: border-box;
+}
+.inputForm{
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 1px solid #0D2D43;
+  border-radius: 10px;
+}
+textarea{
+  background-color: #fff;
+  border: 1px solid #0D2D43;
+  border-radius: 15px;
+  height: 7rem;
+  padding: 1rem;
+}
+.inputForm:focus, textarea:focus{
+  outline: 2px solid #0D426D;
+  border: 2px solid #0D426D;
+  border-color: #0D426D;
+}
+
+form input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+
+.containerContactoUbi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D426D;
+  color: #fff;
+  width: 100vw;
+  height: 50vh;
+  gap: 1rem;
+  z-index:0;
+
+}
+.donde{
+  display: flex;  
+  flex-direction: column;
+  align-items: start;
+  z-index: 2;
+  
+}
+.mapa{
+  width: 40vw;
+  height: 39vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 2;
+  
+}
+.botonUbicacion{
+  all: unset;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding: .5rem;
+  color: #0D426D;
+  align-self: center;
+  margin-top: 1rem;
+  width: 8rem;
+  text-align: center;
+}
+.logoFondoUbi{
+  z-index: 1;
+  position: absolute;
+  opacity: 0.3;
+  padding: 3rem;
 }

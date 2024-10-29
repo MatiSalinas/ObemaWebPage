@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import  video  from '/video/landscapedemo2.mp4'
+import  video  from '/video/OBEMAINICIOVIDEO.mp4'
 import logoAzul from '/svgs/logo_azul.svg'
 import construccion from '/svgs/construccion.svg'
 import mineria from '/svgs/mineria.svg'
@@ -10,6 +10,7 @@ import facilidadlogo from '/svgs/facilidadlogo.svg'
 import rayologo from '/svgs/rayologo.svg'
 import Aislamientologo from '/svgs/Aislamientologo.svg'
 import resistencialogo from '/svgs/resitencialogo.svg'
+
 function Inicio(){
     return (
         <div className="containerInicio">
@@ -60,7 +61,7 @@ function Inicio(){
             </div>
 
             <div className="moduloTuristico">
-                <img src="" alt="" className='imgModulo' />
+                
                 <h3>Modulo turistico</h3>
             </div>
 
@@ -214,6 +215,7 @@ function Inicio(){
                     <Link to="/modulos" className='botonLink' id='MIBL'>CONOCE MAS</Link>
                 </div>
             </div>
+            
             <div className="ventajasBeneficios">
                 <div className="lineaAzulVB"></div>
                 <h2>Ventajas & Beneficios</h2>
