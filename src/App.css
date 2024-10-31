@@ -103,10 +103,17 @@ nav{
 .moduloTuristico{
   width: 100%;
   height: 80vh;
-  background-image: url('/images/casaModular.JPG');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y:70%;
+  
+}
+.moduloTuristico h3{
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: #fff;
+  font-family: 'openSans';
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .botonesLandScape{
@@ -242,6 +249,7 @@ nav{
 }
 .quienesSomosP{
   text-align:center;
+  font-size: 1.2rem;
 }
 
 
@@ -390,8 +398,29 @@ span{
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  padding-left: 1rem;
+}
+.nodoSup,.nodoInf{
+  position: relative;
+
 }
 
+.ImagenHistoria{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom:100%;
+}
+.ImagenHistoriaInferior{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top:100%;
+}
+.ImagenHistoria img{
+  height: 200px;
+  width: 200px;
+}
 
 .nodoSup,.nodoInf,.circuloNodo{
   display: flex;
@@ -404,6 +433,8 @@ span{
   text-align: center;
   padding: 5px;
 }
+
+
 .circuloNodo{
   margin: 0;
 }
@@ -426,10 +457,10 @@ span{
 }
 
 .scrollHistoria{
-  min-height: fit-content;
-  overflow-x: scroll;
+  height: fit-content;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  padding-bottom: 1rem;
 }
 
 .modulosIndustriales{
@@ -478,8 +509,9 @@ span{
 }
 .ventajasBeneficios h2{
   font-family: "openSans-EB";
+  font-size: 2rem;
 }
-.franjaSvgVB{
+.franjaSvgVB,.franjaTextoOculto{
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
@@ -487,6 +519,20 @@ span{
   gap: 2rem;
   width: 100vw;
   height: 10vh;
+}
+
+.svgVB p {
+  text-align: center;
+}
+.svgVB{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.franjaTextoOculto{
+  height: 0;
 }
 .VBsvg{
   height: 5rem;
@@ -508,6 +554,9 @@ span{
   height: 30vh;
   width: 40vw;
   margin-right: -30%;
+}
+.imagenCasaModulo .carousel__slide img{
+  object-fit: fill;
 }
 .infoMI{
   height: fit-content;
@@ -580,17 +629,21 @@ span{
   font-family: 'poppins';
 }
 .cuadradoServicio p,.cuadradoServicio h3{
-  font-family: 'poppinsHola';
+  font-family: 'openSans';
 }
 .cuadradoServicio{
   width: 40vw;
   height: fit-content;
   background-color: #0D426D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 .superiorCuadradoServicio{
   display: flex;
-  width: 100%;
+  width: 70%;
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
@@ -606,8 +659,8 @@ span{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 116px;
-  height: 116px;
+  width: 90px;
+  height: 90px;
   filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(177deg) brightness(105%) contrast(102%);
 }
 .imgServicio{
@@ -623,9 +676,11 @@ span{
   background-color: #CCCCCC;
 }
 .fondoTopPorfolio{
-
+  height: 40vh;
   width: 100vw;
-  background-color: #646769;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)),url('images/Encabezado.jpg');
+  background-size: cover;
+  background-position-y: 60%;
   color: #f2f3f4;
   font-family: 'openSans';
   display: flex;
@@ -657,7 +712,7 @@ span{
 .carousel4 { grid-area: 2 / 2 / 3 / 4; }
 .carousel5 { grid-area: 1 / 4 / 3 / 5; }
 
-.carousel1 ,.carousel2,.carousel3,.carousel4,.carousel5{
+.carousel1 ,.carousel2,.carousel3,.carousel4,.carousel5,.moduloTuristico,.imagenModuloIndustrial,.imagenCasaModulo{
   overflow: hidden;
   position: relative;
 }
@@ -679,6 +734,8 @@ span{
   object-fit: cover;
 
 }
+
+
 
 .containerContacto{
   display: flex;
@@ -809,4 +866,228 @@ form input:not(textarea) {
   position: absolute;
   opacity: 0.3;
   padding: 3rem;
+}
+.containerModulosTop{
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.containerModulosTop .carousel__slide img{
+  filter: brightness(75%);
+}
+.textoModuloTop{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.containerModulosTop h1{
+  
+  color: #f2f2f2;
+  text-shadow: 3px 3px 5px #000;
+  font-family: 'openSans-EB';
+  font-size: 3rem;
+  margin-bottom: 10rem;
+}
+.containerModulosTop .logo{
+  width: 20rem;
+  height: 6rem;
+  
+}
+.containerModulosTop p{
+  
+  color: #fff;
+  font-family: 'openSans';
+  font-size: 1.2rem;
+}
+
+.futuroModular{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.futuroModular .lineaAzul {
+  width: 26vw;
+}
+.futuroModular h2{
+  font-family: 'openSans-Bold';
+  font-size: 2.5rem;
+}
+.futuroModular p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'openSans';
+}
+.F{
+  margin-top: 2rem;
+}
+.sistemaConstructivo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sistemaConstructivo h2{
+  font-size: 2rem;
+  font-family: 'openSans-EB';
+}
+.tipologias{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tipologias h2{
+  font-size: 2rem;
+  font-family: 'openSans-EB';
+}
+.tipologias2modulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.moduloTipologia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  margin-bottom: 2rem;
+}
+.moduloTipologia h3{
+text-align: center;
+font-family: 'openSans-Bold';
+font-size: 1.8rem;
+margin-bottom: 2rem;
+}
+.textoOcultoTipologia{
+  font-family: 'openSans';
+  padding: .4rem;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 97%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: hwb(0 0% 100% / 0.54);
+  text-align: center;
+  transition: 1s;
+}
+.ocultoVentaja{
+  width: 10rem;
+  text-align: center;
+  font-size: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.franjaTextoOculto{
+  justify-content: space-evenly;
+}
+
+.casa{
+  width: 1000px;
+  height: 690px;
+  position: relative;
+}
+.casaImagen{
+  width: 1000px;
+  height: 690px;
+}
+.puntoAzul{
+  position: absolute;
+  z-index: 3;
+  width: 1rem;
+}
+.LineaModulo{
+  position: absolute;
+  z-index: 3;
+  height: 8rem;
+  left: 215px;
+  top: -100px;
+}
+#puntoTecho1{
+  left: 207px;
+  top: 20px;
+}
+#puntoTecho2{
+  left: 207px;
+  top: 60px;
+}
+#puntoTecho3{
+  left: 110px;
+  top: 200px;
+}
+#puntoTecho4{
+  left: 215px;
+  top: 195px;
+}
+#puntoTecho5{
+  left: 250px;
+  top: 190px;
+}
+#puntoPiso1{
+  left: 370px;
+  bottom: 44px;
+}
+#puntoPiso2{
+  left: 260px;
+  bottom: 120px;
+}
+#puntoPiso3{
+  left: 255px;
+  bottom: 160px;
+}
+#puntoPiso4{
+  left: 243px;
+  bottom: 205px;
+}
+#puntoPiso5{
+  left: 236px;
+  bottom: 240px;
+}
+#puntoPared1{
+  right: 272px;
+  bottom: 170px;
+}
+#puntoPared2{
+  right: 240px;
+  bottom: 80px;
+}
+#puntoPared3{
+  right: 169px;
+  bottom: 44px;
+}
+#puntoPared4{
+  right: 490px;
+  bottom: 162px;
+}
+#puntoVentana1{
+  right: 60px;
+  bottom: 200px;
+}
+#puntoVentana2{
+  right: 46px;
+  bottom: 300px;
+}
+#puntoVentana3{
+  right: 10px;
+  bottom: 295px;
 }

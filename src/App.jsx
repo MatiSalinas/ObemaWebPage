@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-import Inicio from './components/inicio';
+import Inicio from './components/Inicio';
 import Servicios from './components/Servicios';
 import Portfolio from './components/Portfolio';
 import Contacto from './components/Contacto';

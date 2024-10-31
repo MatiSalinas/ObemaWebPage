@@ -13,7 +13,7 @@ function NavBar(){
             <Link to='/servicios'>SERVICIOS</Link>
             <Link to='/portfolio' >PORTFOLIO</Link >
             <Link to='/modulos' >MODULOS</Link >
-            <Link to='/contacto' >CONCTATO</Link >
+            <Link to='/contacto' >CONTACTO</Link >
         </div>
         </nav>
     )

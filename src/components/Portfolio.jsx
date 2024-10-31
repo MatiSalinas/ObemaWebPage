@@ -1,12 +1,13 @@
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Link } from 'react-router-dom'
+import Autoplay from 'embla-carousel-autoplay'
 function Portfolio(){
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-    const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true })
-    const [emblaRef3, emblaApi3] = useEmblaCarousel({ loop: true })
-    const [emblaRef4, emblaApi4] = useEmblaCarousel({ loop: true })
-    const [emblaRef5, emblaApi5] = useEmblaCarousel({ loop: true })
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true },[Autoplay()])
+    const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true },[Autoplay({delay:3000})])
+    const [emblaRef3, emblaApi3] = useEmblaCarousel({ loop: true },[Autoplay({delay:3500})])
+    const [emblaRef4, emblaApi4] = useEmblaCarousel({ loop: true },[Autoplay({delay:2500})])
+    const [emblaRef5, emblaApi5] = useEmblaCarousel({ loop: true },[Autoplay({delay:4500})])
 return(
     <div className="containerPorfolio">
         <div className="fondoTopPorfolio">
