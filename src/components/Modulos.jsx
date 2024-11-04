@@ -9,11 +9,11 @@ import resistencialogo from '/svgs/resitencialogo.svg'
 import Autoplay from 'embla-carousel-autoplay'
 import { motion } from 'framer-motion'
 import puntoAzul from '/svgs/PuntoAzul.svg'
-import lineaModulo  from '/svgs/linea1.svg'
 function Modulos(){
 
     const [mouseModulos, setMouseModulos] = useState({1:false,2:false,3:false,4:false})
     const [mouseVentajas, setMouseVentaja] = useState({1:false,2:false,3:false,4:false,5:false})
+    const [mousePuntos, setMousePunto ] = useState({1:false,2:false,3:false,4:false,5:false,6:false,7:false,8:false,9:false,10:false,11:false,12:false,13:false,14:false,15:false,16:false,17:false})
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true },[Autoplay()])
     const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true },[Autoplay()])
@@ -54,7 +54,7 @@ function Modulos(){
                 <div className="lineaAzul"></div>
             </div>
 
-            <div className="ventajasBeneficios">
+            <div className="ventajasBeneficios blanco">
                 <div className="lineaAzulVB"></div>
                 <h2>Ventajas & Beneficios</h2>
                 <p>De nuestros modulos habitacionales</p>
@@ -105,31 +105,75 @@ function Modulos(){
                 <h2>Sistema Constructivo</h2>
                 <div className="casa">
                     <img src="svgs/Casa.svg" alt="casa" className="casaImagen" />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho1' />
-
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho2' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho3' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho4' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho5' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso1' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso2' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso3' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso4' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso5' />
-                    
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared1' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared2' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared3' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared4' />
-                    
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana1' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana2' />
-                    <img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana3' /> 
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho1' onMouseEnter={()=>setMousePunto({...mousePuntos,1:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,1:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoTecho1" initial={{width:0,opacity:0,originX:1}} animate={(mousePuntos[1]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Plancha Aluzinc 0.45mn</motion.div>
                     </div>
-                <div className="lineaAzul F"></div>
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho2' onMouseEnter={()=>setMousePunto({...mousePuntos,2:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,2:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoTecho2" initial={{width:0,opacity:0}} animate={(mousePuntos[2]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Lana Mineral Fibra de Vidrio</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho3' onMouseEnter={()=>setMousePunto({...mousePuntos,3:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,3:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoTecho3" initial={{width:0,opacity:0}} animate={(mousePuntos[3]) ? {width:"250px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Estructura de acero <br />Galvanizado</motion.div>
+                    </div>
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho4' onMouseEnter={()=>setMousePunto({...mousePuntos,4:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,4:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoTecho4" initial={{width:0,opacity:0}} animate={(mousePuntos[4]) ? {width:"350px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Perfiles de Acero Galvanizado <br />Tipo Omega</motion.div>
+                    </div>
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoTecho5' onMouseEnter={()=>setMousePunto({...mousePuntos,5:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,5:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoTecho5" initial={{width:0,opacity:0}} animate={(mousePuntos[5]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Parantes y Rieles de acero <br />Galvanizado</motion.div>
+                    </div>
+
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso1' onMouseEnter={()=>setMousePunto({...mousePuntos,6:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,6:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPiso1" initial={{width:0,opacity:0}} animate={(mousePuntos[6]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Apoyos de Concreto</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso2' onMouseEnter={()=>setMousePunto({...mousePuntos,7:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,7:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPiso2" initial={{width:0,opacity:0}} animate={(mousePuntos[7]) ? {width:"280px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Estructura principal en <br /> Acero Galvanizado</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso3' onMouseEnter={()=>setMousePunto({...mousePuntos,8:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,8:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPiso3" initial={{width:0,opacity:0}} animate={(mousePuntos[8]) ? {width:"400px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Correas de Acero Galvanizado</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso4' onMouseEnter={()=>setMousePunto({...mousePuntos,9:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,9:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPiso4" initial={{width:0,opacity:0}} animate={(mousePuntos[9]) ? {width:"400px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Tablero de Triplay Fenolico de 18mm</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPiso5' onMouseEnter={()=>setMousePunto({...mousePuntos,10:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,10:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPiso5" initial={{width:0,opacity:0}} animate={(mousePuntos[10]) ? {width:"400px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Piso Ceramico Tipo Madera</motion.div>
+                    </div>
+                    
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared1' onMouseEnter={()=>setMousePunto({...mousePuntos,11:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,11:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPared1" initial={{width:0,opacity:0}} animate={(mousePuntos[11]) ? {width:"200px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Lamina mineral de <br />Fibra de Vidrio</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared2' onMouseEnter={()=>setMousePunto({...mousePuntos,12:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,12:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPared2" initial={{width:0,opacity:0}} animate={(mousePuntos[12]) ? {width:"200px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Placa exterior de<br />Fibrocemento 10mm</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared3' onMouseEnter={()=>setMousePunto({...mousePuntos,13:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,13:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPared3" initial={{width:0,opacity:0}} animate={(mousePuntos[13]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Acabado de exterior con<br />enchape de madera</motion.div>
+                    </div>
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoPared4' onMouseEnter={()=>setMousePunto({...mousePuntos,14:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,14:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoPared4" initial={{width:0,opacity:0}} animate={(mousePuntos[14]) ? {width:"230px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Parantes Y Rieles de<br />Acero Galvanizado</motion.div>
+                    </div>
+                    
+
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana2' onMouseEnter={()=>setMousePunto({...mousePuntos,15:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,15:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoVentana2" initial={{width:0,opacity:0}} animate={(mousePuntos[15]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Puerta Batiente de<br />Vidrio con marco <br />Metalico</motion.div>
+                    </div>
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana3' onMouseEnter={()=>setMousePunto({...mousePuntos,16:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,16:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoVentana3" initial={{width:0,opacity:0}} animate={(mousePuntos[16]) ? {width:"300px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Ventana corrediza<br />de Alumnio Negro</motion.div>
+                    </div>
+
+                    <div className="puntoYtexto"><img src={puntoAzul} alt="" className="puntoAzul" id='puntoVentana1' onMouseEnter={()=>setMousePunto({...mousePuntos,17:true})} onMouseLeave={()=>setMousePunto({...mousePuntos,17:false})}/>
+                    <motion.div className="textoPunto" id="tPuntoVentana1" initial={{width:0,opacity:0}} animate={(mousePuntos[17]) ? {width:"270px",opacity:1} : {width:0,opacity:0}} transition={{duration:.3}} >Placa Interior de Yeso <br />de 12.7mm</motion.div>
+                    </div>
+
+
+                    </div>
             </div>
 
             <div className="tipologias">
+                <div className="lineaAzul F"></div>
                 <h2>Tipologías</h2>
                 <div className="tipologias2modulos">
                 <div className="moduloTipologia">

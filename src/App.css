@@ -1,33 +1,33 @@
 @font-face { font-family: 'openSans'; 
-  src: url('public/fonts/openSans-Regular.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
+  src:local("openSans"), url("./fonts/openSans-Regular.ttf"), format('truetype'); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'openSans-Bold'; 
-  src: url('public/fonts/openSans-Bold.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
+  src: local("openSans-Bold"),url("./fonts/openSans-Bold.ttf"), format('truetype'); font-weight: normal; font-style: normal; }
 
   @font-face { font-family: 'openSans-l'; 
-    src: url('public/fonts/openSans-Light.ttf') ,format('truetype'); font-weight: normal; font-style: normal; }
+    src:local("openSans-l"), url("./fonts/openSans-Light.ttf") ,format('truetype'); font-weight: normal; font-style: normal; }
 
 @font-face { 
   font-family: 'openSans-EB'; 
-  src: url('public/fonts/OpenSans-ExtraBold.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
+  src:local("openSans-EB"), url("./fonts/OpenSans-ExtraBold.ttf"), format('truetype'); font-weight: normal; font-style: normal; }
 
 
 @font-face { font-family: 'poppins'; 
-  src: url('public/fonts/Poppins-Regular.ttf'), format('truetype'); font-weight: normal; font-style: normal; }
+  src:local("poppins"), url("./fonts/Poppins-Regular.ttf"), format('truetype'); font-weight: normal; font-style: normal; }
 html{
   overflow-x: hidden;
 }
 *{
   margin: 0;
   padding: 0;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 
 h1, h4{
-  font-family: 'openSans-Bold';
+  font-family: 'openSans-Bold','poppins';
 }
 .light{
-  font-family: 'openSans-l';
+  font-family: 'openSans-l','poppins';
 }
 a{
   all: unset;
@@ -57,17 +57,20 @@ nav{
   width: 100%;
 }
 .secciones{
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
   display: flex;
   gap: 1rem;
   color: #f2f2f2;
   margin-right: 5rem;
 }
 
+.secciones a {
+  cursor: pointer;
+}
 
 
 .tituloHero{
-  font-family: 'openSans-EB';
+  font-family: 'openSans-EB','poppins';
   text-shadow: 5px 4px 2px #000;
   font-size: 3rem;
   text-align: center;
@@ -89,7 +92,8 @@ nav{
 }
 .heroLandScape p {
   font-family: 'poppins';
-  margin-right: 8rem;
+  align-self: center;
+  font-size: 1.4rem;
 }
 .videoLandScape{
   position: absolute;
@@ -110,7 +114,7 @@ nav{
   bottom: 30px;
   left: 40px;
   color: #fff;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
   font-size: 2rem;
   font-weight: 900;
   text-shadow: 1px 1px 2px #000;
@@ -132,6 +136,8 @@ nav{
   padding: .5rem;
   border-radius: 30px;
   border: 1px solid #f2f3f4;
+  font-size: .8rem;
+
 }
 .botonLink{
   font-family: 'poppins';
@@ -244,12 +250,13 @@ nav{
 }
 .AboutUs h2{
   font-size: larger;
-  font-family: 'openSans-EB';
+  font-family: 'openSans-EB','poppins';
 
 }
 .quienesSomosP{
   text-align:center;
   font-size: 1.2rem;
+  font-family: 'poppins';
 }
 
 
@@ -275,6 +282,13 @@ footer{
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+}
+.contactoFooter{
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  gap: .2rem;
 }
 .formFooter{
   display: flex;
@@ -329,12 +343,12 @@ footer{
 .BloqueInicioPortfolio h2{
   width: 33vw;
   text-align: center;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 .BloqueInicioPortfolio h1{
   width: 33vw;
   text-align: center;
-  font-family: 'openSans-Bold';
+  font-family: 'openSans-Bold','poppins';
 }
 .lineaAzul{
   background-color: #0D426D;
@@ -343,7 +357,7 @@ footer{
 }
 
 span{
-  font-family: 'openSans-Bold';
+  font-family: 'openSans-Bold','poppins';
   font-weight: bolder;
 }
 
@@ -364,13 +378,14 @@ span{
   padding-bottom: 1rem;
 }
 .historia h1{
-  font-family: 'openSans';
+  font-family: 'openSans-Bold','poppins';
 }
 .historia h2{
   margin-top: 3rem;
   text-align: center;
   font-family: 'poppins';
   font-weight: 300;
+  font-size: 1.2rem;
 }
 .historia h2 span{
   font-weight: 900;
@@ -432,6 +447,8 @@ span{
   height: 3rem;
   text-align: center;
   padding: 5px;
+  font-family: 'openSans','poppins';
+
 }
 
 
@@ -483,10 +500,13 @@ span{
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 .infoMI h2{
-  font-family: "openSans-EB";
+  font-family: "openSans-EB",'poppins';
+}
+.infoMI p{
+  font-size: 1.2rem;
 }
 #MIBL{
   width: 7rem;
@@ -497,19 +517,19 @@ span{
   background-color: #0D426D;
 }
 .ventajasBeneficios{
-  background-color: #FFFFFF;
+  background-color: #CCCCCC;
   height: fit-content;
   width: 100%;
-  font-family: "openSans";
+  font-family: "openSans",'poppins';
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 3rem;
 }
 .ventajasBeneficios h2{
-  font-family: "openSans-EB";
+  font-family: "openSans-Bold",'poppins';
   font-size: 2rem;
+  margin-bottom: -2rem;
 }
 .franjaSvgVB,.franjaTextoOculto{
   margin-top: 2rem;
@@ -540,9 +560,9 @@ span{
 
 
 .casaModulIndustrial{
-  height: 50vh;
+  height: 39vh;
   width: 100vw;
-  background-color: #FFFFFF;
+  background-color: #CCCCCC;
   display: flex;
   align-items:center;
   justify-content: start;
@@ -563,11 +583,12 @@ span{
   width: fit-content;
 }
 .infoMI p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .infoMI h2{
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-family: 'openSans-Bold','poppins';
 }
 .lineaAzulMC{
   margin-left: 5rem;
@@ -603,12 +624,12 @@ span{
   width: 20vw;
 }
 .heroServicios p{
-  font-size: 1.5rem;
-  font-family: 'openSans';
+  font-size: 1.4rem;
+  font-family: 'openSans','poppins';
   text-align: center;
 }
 .heroServicios h2{
-  font-family: "openSans-EB";
+  font-family: "openSans-EB",'poppins';
   font-size: 2rem;
 }
 .lineaAzulServicios{
@@ -629,7 +650,7 @@ span{
   font-family: 'poppins';
 }
 .cuadradoServicio p,.cuadradoServicio h3{
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 .cuadradoServicio{
   width: 40vw;
@@ -639,15 +660,15 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .superiorCuadradoServicio{
   display: flex;
   width: 70%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 1rem;
   padding-bottom: 1rem;
+  gap: 6rem;
 }
 .tituloTextoServicio{
   display:flex;
@@ -678,11 +699,11 @@ span{
 .fondoTopPorfolio{
   height: 40vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)),url('images/Encabezado.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)),url("/images/Encabezado.jpg");
   background-size: cover;
   background-position-y: 60%;
   color: #f2f3f4;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -751,7 +772,6 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1)),url('/images/perrito.jpg');
   color: #f2f2f2;
   width: 100%;
   background-position: center;
@@ -761,11 +781,12 @@ span{
 }
 .containerTopContacto h1{
   font-size: 2.5rem;
-  font-family: 'openSans-Bold';
+  font-family: 'openSans-Bold','poppins';
+  text-shadow: 5px 4px 2px #000;
 }
 .containerTopContacto p{
   font-size: 1.4rem;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 .contactoForm{
   padding: 1rem;
@@ -840,6 +861,7 @@ form input:not(textarea) {
   flex-direction: column;
   align-items: start;
   z-index: 2;
+  gap: .8rem;
   
 }
 .mapa{
@@ -864,7 +886,7 @@ form input:not(textarea) {
 .logoFondoUbi{
   z-index: 1;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.2;
   padding: 3rem;
 }
 .containerModulosTop{
@@ -873,8 +895,12 @@ form input:not(textarea) {
   overflow: hidden;
   margin-bottom: 2rem;
 }
+.containerModulosTop .carousel__slide{
+  height: 70vh;
+}
 .containerModulosTop .carousel__slide img{
   filter: brightness(75%);
+  object-position:80% 80% !important;
 }
 .textoModuloTop{
   position: absolute;
@@ -892,20 +918,22 @@ form input:not(textarea) {
   
   color: #f2f2f2;
   text-shadow: 3px 3px 5px #000;
-  font-family: 'openSans-EB';
+  font-family: 'openSans-EB','poppins';
   font-size: 3rem;
   margin-bottom: 10rem;
 }
 .containerModulosTop .logo{
   width: 20rem;
   height: 6rem;
+  margin-left: 3rem;
   
 }
 .containerModulosTop p{
   
   color: #fff;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
   font-size: 1.2rem;
+  margin-top: -1rem;
 }
 
 .futuroModular{
@@ -919,13 +947,13 @@ form input:not(textarea) {
   width: 26vw;
 }
 .futuroModular h2{
-  font-family: 'openSans-Bold';
-  font-size: 2.5rem;
+  font-family: 'openSans-Bold','poppins';
+  font-size: 2rem;
 }
 .futuroModular p{
   text-align: center;
   font-size: 1.2rem;
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
 }
 .F{
   margin-top: 2rem;
@@ -938,17 +966,23 @@ form input:not(textarea) {
 }
 .sistemaConstructivo h2{
   font-size: 2rem;
-  font-family: 'openSans-EB';
+  font-family: 'openSans-EB','poppins';
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 .tipologias{
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .tipologias h2{
+  margin-top: 1rem;
   font-size: 2rem;
-  font-family: 'openSans-EB';
+  font-family: 'openSans-Bold','poppins';
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .tipologias2modulos{
   display: flex;
@@ -969,12 +1003,12 @@ form input:not(textarea) {
 }
 .moduloTipologia h3{
 text-align: center;
-font-family: 'openSans-Bold';
+font-family: 'openSans-Bold','poppins';
 font-size: 1.8rem;
 margin-bottom: 2rem;
 }
 .textoOcultoTipologia{
-  font-family: 'openSans';
+  font-family: 'openSans','poppins';
   padding: .4rem;
   color: #fff;
   font-size: 1.2rem;
@@ -988,6 +1022,27 @@ margin-bottom: 2rem;
   background-color: hwb(0 0% 100% / 0.54);
   text-align: center;
   transition: 1s;
+}
+.wraperTyS{
+  position: relative;
+}
+.textoOcultoServicio{
+  position: absolute;
+  font-family: 'openSans','poppins';
+  padding: .4rem;
+  color: #fff;
+  font-size: 1.2rem;
+  top: 2%;
+  width: 98%;
+  height: 97.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: hwb(0 0% 100% / 0.54);
+  text-align: center;
+  transition: 1s;
+  
 }
 .ocultoVentaja{
   width: 10rem;
@@ -1080,8 +1135,8 @@ margin-bottom: 2rem;
   bottom: 162px;
 }
 #puntoVentana1{
-  right: 60px;
-  bottom: 200px;
+  left: 60px;
+  top: 230px;
 }
 #puntoVentana2{
   right: 46px;
@@ -1090,4 +1145,179 @@ margin-bottom: 2rem;
 #puntoVentana3{
   right: 10px;
   bottom: 295px;
+}
+
+.textoPunto{
+  position: absolute;
+  font-size: 1.4rem;
+  font-family: "openSans",'poppins';
+  height: 2.1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: hsla(0, 0%, 6%, 0.603);
+  color: #f2f2f2;
+  text-align: center;
+}
+
+#tPuntoTecho1{
+  left: -85px;
+  top: 10px;
+  z-index: 4;
+}
+#tPuntoTecho2{
+  left: -100px;
+  top: 50px;
+  z-index: 4;
+}
+#tPuntoTecho3{
+  height: 4rem;
+  text-align: right;
+  left: -220px;
+  top: 180px;
+  z-index: 4;
+
+}
+#tPuntoTecho4{
+  height: 4rem;
+  text-align: right;
+  left: 270px;
+  top: 180px;
+  z-index: 1;
+
+}
+#tPuntoTecho5{
+  height: 4rem;
+  text-align: right;
+  left: 270px;
+  top: 180px;
+  z-index: 1;
+
+}
+#tPuntoPiso1{
+  height: 2rem;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1;
+
+}
+#tPuntoPiso2{
+  height: 4rem;
+  text-align: right;
+  left: -70px;
+  bottom: 100px;
+  z-index: 1;
+
+}
+#tPuntoPiso3{
+  height: 2rem;
+  left: -150px;
+  bottom: 160px;
+  z-index: 1;
+
+}
+#tPuntoPiso4{
+  height: 2rem;
+  left: -180px;
+  bottom: 210px;
+  z-index: 1;
+
+}
+#tPuntoPiso5{
+  height: 2rem;
+  left: -180px;
+  bottom: 240px;
+  z-index: 1;
+
+}
+#tPuntoPared1{
+  height: 4rem;
+  text-align: right;
+  right: 60px;
+  bottom: 140px;
+  z-index: 1;
+
+}
+#tPuntoPared2{
+  height: 4rem;
+  text-align: right;
+  right: 20px;
+  bottom: 60px;
+  z-index: 1;
+
+}
+#tPuntoPared3{
+  height: 4rem;
+  text-align: right;
+  right: -90px;
+  bottom: 20px;
+  z-index: 1;
+
+}
+#tPuntoPared4{
+  height: 4rem;
+  text-align: right;
+  right: 250px;
+  bottom: 140px;
+  z-index: 3;
+
+}
+#tPuntoVentana2{
+  height: 6rem;
+  right: -80px;
+  bottom: 370px;
+  z-index: 3;
+
+}
+#tPuntoVentana3{
+  height: 4rem;
+  right: -140px;
+  bottom: 370px;
+  z-index: 3;
+
+}
+#tPuntoVentana1{
+  height: 4rem;
+  left: -290px;
+  text-align: right;
+  top: 205px;
+  z-index: 3;
+
+}
+
+.formFooterButton:active{scale: 0.8;}
+
+#logoFooter{
+  width: 20rem;
+}
+
+@media only screen and (max-width: 1400px) {
+.containerTopContacto{
+
+  height: 100vh;
+}
+
+.containerContactoUbi{
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+
+}
+
+a {
+  cursor: pointer;
+}
+.blanco{
+  background-color: #FFFFFF;
+}
+#derechos{
+  font-size: .7rem;
+}
+
+#sloganFooter{
+  font-weight: 100;
+}
+#accede{
+  font-size: 1.37rem;
 }

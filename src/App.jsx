@@ -4,7 +4,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Inicio from './components/Inicio';
-import Servicios from './components/Servicios';
+import Servicios from './components/servicios';
 import Portfolio from './components/Portfolio';
 import Contacto from './components/Contacto';
 import Modulos from './components/Modulos';

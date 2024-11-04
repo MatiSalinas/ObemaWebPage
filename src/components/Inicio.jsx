@@ -46,7 +46,7 @@ function Inicio(){
                     </div>
                     <div className="rubroTitulos">
                         <h3>Construcción</h3>
-                        <h3>Mineria</h3>
+                        <h3>Campamentos</h3>
                         <h3>Industria</h3>
                         <h3>Vial</h3>
                     </div>
@@ -64,7 +64,7 @@ function Inicio(){
             <div className="BloqueInicioPortfolio">
                 <div className="lineaAzul"></div>
                 <h1>Conocé nuestras obras, <br /> proyectos y servicios</h1>
-                <h2>Accedé a nuestro porfolio y conocé los proyectos más relevantes de <span>OBEMA SA.</span></h2>
+                <h2 id='accede'>Accedé a nuestro porfolio y conocé los proyectos más relevantes de <span>OBEMA SA.</span></h2>
                 <button type="button"></button>
                 <Link to="/portfolio" className='botonLink' >PORTFOLIO</Link>
             </div>
@@ -219,7 +219,7 @@ function Inicio(){
                                                 </div>
                                         </div>
                                         <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,13:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,13:false})}>
-                                        <motion.img src="/images/historia/2Casas-SUSANAQUINTELA.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[13]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                        <motion.img src="/images/historia/13-SERVICIOS-NACION.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[13]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
                                                 <div className="circuloNodo">
                                                     <div className="lineaCirculo"></div>
                                                     <div className="circulo"></div>
@@ -234,7 +234,7 @@ function Inicio(){
 
             </div>
 
-            <div className="modulosIndustriales">
+            {/* <div className="modulosIndustriales">
                 <div className="imagenModuloIndustrial">
                 <div className="carousel__viewport" ref={emblaRef2}>
                 <div className="carousel__container">
@@ -255,11 +255,11 @@ function Inicio(){
                     </p>
                     <Link to="/modulos" className='botonLink' id='MIBL'>CONOCE MAS</Link>
                 </div>
-            </div>
+            </div> */}
             
             <div className="ventajasBeneficios">
                 <div className="lineaAzulVB"></div>
-                <h2>Ventajas & Beneficios</h2>
+                <h2>Ventajas y Beneficios</h2>
                 <p>De nuestros modulos habitacionales</p>
                 <div className="franjaSvgVB">
 
@@ -285,19 +285,19 @@ function Inicio(){
                         </div>
                 </div>
                 <motion.div className="franjaTextoOculto" initial={{height:0, opacity:0}} animate={(mouseVentajas[1] || mouseVentajas[2] || mouseVentajas[3] || mouseVentajas[4] || mouseVentajas[5] ) ? {height:"5rem",opacity:1}:{height:"0rem", opacity:0}} transition={{duration:1}}>
-                <motion.div className="ocultoVentaja" initial={{ color:"#fff"}} animate={(mouseVentajas[1]) ? {color:"#000"}:{ color:"#fff"}} transition={{duration:1}}>
+                <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC"}} animate={(mouseVentajas[1]) ? {color:"#000"}:{ color:"#CCCCCC"}} transition={{duration:1}}>
                         <p>Se trata de proyectos fabricados en 60 DÍAS de construcción, (dependiendo la cantidad de m2) e instalados en pocos días, para su rápida puesta en marcha.</p>
                         </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#fff"}} animate={(mouseVentajas[2]) ? {color:"#000"}:{color:"#fff"}} transition={{duration:1}}>
+                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[2]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
                         <p>Estas viviendas son rentables y duraderas, ofreciendo fácil mantenimiento a lo largo del tiempo.</p>
                         </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#fff"}} animate={(mouseVentajas[3]) ? {color:"#000"}:{color:"#fff"}} transition={{duration:1}}>
+                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[3]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
                         <p>Proporcionan un gran ahorro energético y tienen un menor impacto ambiental. Son una opción sustentable y sostenible.</p>
                         </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#fff"}} animate={(mouseVentajas[4]) ? {color:"#000"}:{color:"#fff"}} transition={{duration:1}}>
+                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[4]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
                         <p>Excelente aislamiento térmico y acústico, eliminan la condensación y previenen el anidamiento de roedores e insectos. Son no tóxicas e ignífugas.</p>
                         </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#fff"}} animate={(mouseVentajas[5]) ? {color:"#000"}:{ color:"#fff"}} transition={{duration:1}}>
+                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[5]) ? {color:"#000"}:{ color:"#CCCCCC"}} transition={{duration:1}}>
                         <p>No emiten llama, humo ni olor, asegurando un entorno seguro y saludable para sus habitantes.</p>
                         </motion.div>
                 </motion.div>
