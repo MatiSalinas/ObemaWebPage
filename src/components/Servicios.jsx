@@ -33,7 +33,7 @@ function Servicios (){
                 <div className="textoOcultoServicio"  style={(mouseModulos[1])? {opacity:1} : {opacity:0}}>
                     OBEMA se especializa <br /> en la construcción de obras de gran envergadura, <br />  priorizando la calidad,  seguridad <br /> y  el cumplimiento de los plazos establecidos <br /> Nuestro equipo profesional garantiza <br /> resultados eficientes y duraderos  <br />en cada proyecto que emprendemos
                 </div>
-                <img src="/images/servicios/Construccion.jpg" className='imgServicio' />
+                <img src="/images/servicios/Construccion-750.png" className='imgServicio' />
             </div>
             
         </div>
@@ -52,7 +52,7 @@ function Servicios (){
                 
                 <div className="textoOcultoServicio"  style={(mouseModulos[2])? {opacity:1} : {opacity:0}}>OBEMA se especializa en la <br /> construcción de módulos habitacionales para la minería, <br /> diseñados para proporcionar comodidad <br /> y funcionalidad en entorno exigentes. <br /> Nuestro compromiso con la calidad <br /> y la seguridad asegura que cada módulo <br />cumpla con los estándares requeridos, <br /> ofreciendo un espacio seguro y eficiente para los trabajadores 
                 </div>
-                <img src="/images/servicios/Mineria-Campamentos.jpg" className='imgServicio' />
+                <img src="/images/servicios/Campamentos-750.png" className='imgServicio' />
 
             </div>
         </div>
@@ -71,7 +71,7 @@ function Servicios (){
                 
                 <div className="textoOcultoServicio"  style={(mouseModulos[3])? {opacity:1} : {opacity:0}}>OBEMA se enfoca en el desarrollo <br /> de proyectos de construcción para la industria, <br /> ofreciendo soluciones personalizadas  <br />que combinan innovación y eficiencia.<br /> Nuestro compromiso es entregar obras <br /> que cumplen con los más altos estándares <br /> de calidad y seguridad,<br /> asegurando la satisfacción del cliente <br /> en cada etapa del proceso.
                 </div>
-                <img src="/images/servicios/industria.jpg" className='imgServicio' />
+                <img src="/images/servicios/Industria-750.png" className='imgServicio' />
             </div>
         </div>
 
@@ -89,7 +89,7 @@ function Servicios (){
                 <div className="textoOcultoServicio"  style={(mouseModulos[4])? {opacity:1} : {opacity:0}}>
                 OBEMA se dedica a la construcción <br /> de obras viales, garantizando  <br />la creación de infraestructuras seguras y eficientes. <br /> Nuestro enfoque en la calidad<br /> y la planificación meticulosa <br /> nos permite cumplir con los plazos establecidos,<br /> brindado soluciones adaptadas a <br />las necesidades de cada proyecto.
                 </div>
-                <img src="/images/servicios/Vial.jpg" className='imgServicio' />
+                <img src="/images/servicios/Vial-750.png" className='imgServicio' />
             </div>
         </div>
 

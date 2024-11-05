@@ -1,6 +1,7 @@
 import logo from '/svgs/logo.svg'
 import { Link } from 'react-router-dom'
 function NavBar(){
+    const isMobile = window.innerWidth < 800;
     return (
         <nav>
         <div className="logo">
@@ -9,6 +10,9 @@ function NavBar(){
             
             </Link>
         </div>
+        {/* <div className="menu-icon" onClick={toggleMenu}>
+        ☰ 
+    </div> */}
         <div className="secciones">
             <Link to='/servicios'>SERVICIOS</Link>
             <Link to='/portfolio' >PORTFOLIO</Link >

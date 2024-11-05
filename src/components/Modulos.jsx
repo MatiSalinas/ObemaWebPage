@@ -185,8 +185,8 @@ Ideales para quienes buscan una <br /> solución habitacional ágil sin <br /> c
 </div>
                     <div className="carousel__viewport" ref={emblaRef2}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/Habitacionales/1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/Habitacionales/2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/Habitacionales/1.png" /></div>
+                <div className="carousel__slide"><img src="/images/Habitacionales/2.png" /></div>
                 </div>
             </div>
                     </div>
@@ -201,8 +201,8 @@ Perfectos para alojamientos en <br /> parques naturales o áreas de <br /> difí
 </div>
                     <div className="carousel__viewport" ref={emblaRef3} >
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/ModulosTuristicos/1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/ModulosTuristicos/2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/ModulosTuristicos/1.png" /></div>
+                <div className="carousel__slide"><img src="/images/ModulosTuristicos/2.png" /></div>
                 </div>
             </div>
                     </div>
@@ -216,8 +216,8 @@ Fabricados con materiales <br /> duraderos y de fácil instalación, <br /> gara
 </div>
                     <div className="carousel__viewport" ref={emblaRef4}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/Campamentos/1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/Campamentos/2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/Campamentos/1.png" /></div>
+                <div className="carousel__slide"><img src="/images/Campamentos/2.png" /></div>
                 </div>
             </div>
                     </div>

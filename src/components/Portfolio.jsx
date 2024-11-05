@@ -20,40 +20,40 @@ return(
             <div className="carousel1" >
             <div className="carousel__viewport" ref={emblaRef}>
                 <div className="carousel__container">
-                        <div className="carousel__slide"><img src="/images/portfolio/1-1.jpg" /></div>
-                        <div className="carousel__slide"><img src="/images/portfolio/1-2.jpg" /></div>
+                        <div className="carousel__slide"><img src="/images/portfolio/1-1.png" /></div>
+                        <div className="carousel__slide"><img src="/images/portfolio/1-2.png" /></div>
                 </div>
             </div>
             </div>
             <div className="carousel2" >
             <div className="carousel__viewport" ref={emblaRef2}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/portfolio/2-1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/portfolio/2-2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/2-1.png" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/2-2.png" /></div>
                 </div>
             </div>
             </div>
             <div className="carousel3" >
             <div className="carousel__viewport" ref={emblaRef3}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/portfolio/3-1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/portfolio/3-2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/3-1.png" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/3-2.png" /></div>
                 </div>
             </div>
             </div>
             <div className="carousel4" >
             <div className="carousel__viewport" ref={emblaRef4}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/portfolio/4-1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/portfolio/4-2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/4-1.png" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/4-2.png" /></div>
                 </div>
             </div>
             </div>
             <div className="carousel5" >
             <div className="carousel__viewport" ref={emblaRef5}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/portfolio/5-1.jpg" /></div>
-                <div className="carousel__slide"><img src="/images/portfolio/5-2.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/5-1.png" /></div>
+                <div className="carousel__slide"><img src="/images/portfolio/5-2.png" /></div>
                 </div>
             </div>
             </div>
