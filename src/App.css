@@ -161,16 +161,22 @@ nav{
 }
 .rubros{
   display: flex;
-  flex-direction: column;
   width: 100%;
   background-color: #CCCCCC;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
   padding: 1rem;
   padding-top:3.4rem;
   gap: 2rem;
   height: fit-content;
   padding-bottom: 5rem;
+}
+.rubroItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .rubroSvgs,.rubroTitulos,.rubroTexto{
@@ -193,7 +199,10 @@ nav{
   width: 116px;
   height: 116px;
 }
-
+#cono,.imgContainer img{
+  height: 116px;
+  width: 116px;
+}
 
 .rubroP{
   font-family: 'poppins';
@@ -268,7 +277,8 @@ footer{
   width: 99%;
   display: flex;
   background-color: #0D426D;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5rem;
   align-items: center;
   color: #f2f2f2;
   padding: 1%;
@@ -331,6 +341,7 @@ footer{
   padding-left: 10px;
   
 }
+
 .logosRedesFooter img{
   width: 2rem;
 }
@@ -381,6 +392,7 @@ span{
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  z-index: 7;
 }
 .historia h1{
   font-family: 'openSans-Bold','poppins';
@@ -411,8 +423,8 @@ span{
   width: 100vw;
   display: flex;
   margin-top: 1rem;
-
   justify-content: space-around;
+  
 }
 .franjaInferior{
   width: 100vw;
@@ -422,6 +434,7 @@ span{
 }
 .nodoSup,.nodoInf{
   position: relative;
+  z-index: 15;
 
 }
 
@@ -430,16 +443,20 @@ span{
   width: 200px;
   height: 200px;
   bottom:100%;
+  z-index: 16;
 }
 .ImagenHistoriaInferior{
   position: absolute;
   width: 200px;
   height: 200px;
   top:100%;
+  z-index:16;
 }
 .ImagenHistoria img{
+  
   height: 200px;
   width: 200px;
+  z-index: 16;
 }
 
 .nodoSup,.nodoInf,.circuloNodo{
@@ -447,6 +464,7 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .nodoSup p, .nodoInf p{
   height: 3rem;
@@ -460,7 +478,10 @@ span{
 .circuloNodo{
   margin: 0;
 }
-
+.nodoSup p ,.circuloNodo p{
+  width: 14rem;
+  height: 5rem;
+}
 .circulo{
   width: 1.4rem;
   height: 1.4rem;
@@ -485,6 +506,7 @@ span{
   padding-bottom: 1rem;
   margin-top: 6rem;
   margin-bottom: 10rem;
+  z-index: 8;
 }
 
 .modulosIndustriales{
@@ -631,13 +653,14 @@ span{
   width: 20vw;
 }
 .heroServicios p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'openSans','poppins';
   text-align: center;
 }
 .heroServicios h2{
   font-family: "openSans-EB",'poppins';
   font-size: 2rem;
+  text-shadow: 5px 4px 2px #000;
 }
 .lineaAzulServicios{
   width:25vw;
@@ -748,6 +771,7 @@ span{
   grid-template-rows: repeat(2, 1fr); 
   gap: 20px 20px; 
   padding: 5rem;
+  width: 60vw;
 }
 .carousel1 { grid-area: 1 / 1 / 3 / 2; 
 }
@@ -825,6 +849,9 @@ span{
   border-radius: 1rem;
   gap: 2rem;
 
+}
+.contactoForm .botonLink{
+  height: 2rem;
 }
 .labelInputForm{
   width: 100%;
@@ -1311,7 +1338,7 @@ margin-bottom: 2rem;
 .formFooterButton:active{scale: 0.8;}
 
 #logoFooter{
-  width: 20rem;
+  width: 15rem;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1354,6 +1381,7 @@ a {
 
 #sloganFooter{
   font-weight: 100;
+  font-size: 1rem;
 }
 #accede{
   font-size: 1.37rem;
@@ -1369,9 +1397,13 @@ a {
   width: 100vw;
   overflow-x: hidden;
  }
+ .containerInicio{
+  overflow-x: hidden;
+ }
   .containerServicios{
     width: 100vw;
     gap: 0;
+    
   }
   .cuadradosServiciosC{
     width: 100vw;
@@ -1455,6 +1487,7 @@ a {
   }
   .ventajasBeneficios{
     min-height:max-content;
+    padding-bottom: 3rem;
   }
   .franjaSvgVB{
     flex-wrap: wrap;
@@ -1552,4 +1585,152 @@ a {
  .rubros{
   flex-direction: column;
  }
+ .videoLandScape{
+  object-position: center center;
+
+ }
+ .heroLandScape p{
+  font-size: 0.9rem;
+ }
+ .BloqueInicioPortfolio h1{
+  width: 80vw;
+  text-align: center;
+ }
+ #accede{
+  width: 80vw;
+  font-size: 0.9rem;
+ }
+ .moduloTuristico{
+  height: auto;
+ }
+ .quienesSomos h2{
+  text-align: center;
+ }
+ .quienesSomosP{
+  font-size: 0.9rem;
+  width: 80vw;
+ }
+ .mYv{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+ }
+ .mYv p{
+  font-size: 0.9rem;
+  width: 80vw;
+ }
+ .historia{
+  align-items: normal;
+  margin-bottom: -10rem;
+ }
+ .historia h1,.historia .lineaAzulHistoria, .historia img{
+  align-self: center;
+ }
+ .scrollHistoria{
+  overflow-x: scroll;
+ }
+ .nodoSup .circulo{
+  margin-top: 2rem;
+ }
+ .azul{
+  margin-bottom: -12rem;
+ }
+ .lineaHistoria{
+  width:500vw;
+ }
+ .franjaInferior{width: 100%;gap: 4.5rem;align-items: flex-start; justify-content: flex-start; z-index: 9;
+  margin-bottom: 200px;
+
+}
+ .franjaSuperior{width: 100%;
+gap: 3rem;
+align-items: flex-start; 
+justify-content: flex-start;
+overflow-y: visible;
+z-index: 9;
+margin-top: 200px;
+
+}
+.nodoSup p ,.circuloNodo p{
+  width: 14rem;
+  height: 3rem;
+}
+.lineaAzulHistoria{
+  margin-top: 150px;
+}
+ .casaModulIndustrial{
+  flex-direction: column;
+  height: fit-content;
+  padding-left: 0;
+  text-align: center;
+ }
+ .infoMI{
+  justify-content: center;
+  align-items: center;
+ }
+ .lineaAzulMC{
+  margin-left: 0;
+  margin-top: 3rem;
+ }
+ .imagenCasaModulo{
+  width: auto;
+ }
+ .containerTopContacto p {
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 1px #000;
+ }
+ .contactoForm{
+  width: 80vw;
+ }
+ .containerContactoUbi{
+flex-direction: column;
+}
+.mapa{
+  width: 80vw;
+}
+.donde{
+  padding-top: 2rem;
+}
+nav{
+  width: 100vw;
+  margin: 0;
+  justify-content: space-evenly;
+  position: relative;
+}
+.secciones{
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  background-color: #0D426D;
+  width: 100vw;
+  right:0;
+  top: 80px;
+  z-index: 12;
+}
+.secciones a {
+  width: 80vw;
+  text-align: center;
+}
+.secciones a:active{
+  scale: 1.3;
+}
+nav .logo{
+  width: 10rem;
+  margin: 0;
+}
+.menu-icon{
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.textoModuloTop h1{
+  width: 80vw;
+  font-size: 2.5rem;
+  text-align: center;
+}
 }

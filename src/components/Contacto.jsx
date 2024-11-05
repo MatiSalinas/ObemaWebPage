@@ -51,7 +51,7 @@ function Contacto(){
                     <div className="labelInputForm">
                         <textarea name="Consulta" id="consulta" placeholder="Escribí tu mensaje aquí" value={emailInfo['consulta']} onChange={(e)=>setEmailInfo({...emailInfo,consulta:e.target.value})}></textarea>
                     </div>
-                    <button className="botonLink">Enviar</button>
+                    <button className="botonLink">ENVIAR</button>
                 </form>
             </div>
             <div className="containerContactoUbi">
@@ -64,7 +64,7 @@ function Contacto(){
                     <p>Av 2 de Abril y Ruta Nacional 5</p>
                     <h2>Horario</h2>
                     <p>Lunes a Viernes de 09:00 a 20:00</p>
-                    <a href="https://maps.app.goo.gl/4i54QUHXsEPJUKKb6" target="_blank" className="botonUbicacion">Ubicación</a>
+                    <a href="https://maps.app.goo.gl/4i54QUHXsEPJUKKb6" target="_blank" className="botonUbicacion">UBICACIÓN</a>
                 </div>
                 <div className="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.7946553554657!2d-66.8467156237829!3d-29.405562575251466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427db6381b85311%3A0x3713b9dd56d1bf1d!2sOBEMA%20S.A.!5e0!3m2!1ses-419!2sar!4v1730144187891!5m2!1ses-419!2sar" width="600" height="280" style={{border:0, borderRadius:"1rem"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
