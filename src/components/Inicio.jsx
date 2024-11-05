@@ -228,9 +228,9 @@ function Inicio(){
                                         </div>
                                     </div>
                 </div>
-                <h2>Accedé a nuestro portfolio y conocé los proyectos más <br />relevantes de <span>OBEMA SA.</span>
+                {/* <h2>Accedé a nuestro portfolio y conocé los proyectos más <br />relevantes de <span>OBEMA SA.</span>
                 </h2>
-                <Link to="/portfolio" className='botonLink' >CONOCE MAS</Link>
+                <Link to="/portfolio" className='botonLink' >CONOCE MAS</Link> */}
 
             </div>
 

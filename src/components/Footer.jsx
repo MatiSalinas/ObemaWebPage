@@ -37,14 +37,14 @@ function Footer(){
     }
     return(
         <footer>
-            <form className="formFooter" onSubmit={handleSumbit}>
+            <form className="formFooter" onSubmit={handleSumbit} id='footer1'>
                 <label htmlFor="emailFooter"> Ingrese su correo electrónico aquí
                     <input type="email" name="emailFooter" id="emailFooter" placeholder='Correo electrónico de contacto' value={emailInfo.email} onChange={(e)=>setEmailInfo({...emailInfo,email:e.target.value})}/>
                 </label>
                 <button type='submit' className='formFooterButton'>Enviar Consulta</button>
             </form>
 
-            <div className="redesFooter">
+            <div className="redesFooter" id='footer2'>
             <img src={logo} alt="Logo OBEMA" id='logoFooter' />
             <h3 id="sloganFooter">Trabajamos a la medida de tus necesidades</h3>
 
@@ -54,7 +54,7 @@ function Footer(){
             <p className='light' id='derechos'>2024.Todos los derechos reservados</p>
             </div>
 
-            <div className="contactoFooter">
+            <div className="contactoFooter" id='footer3'>
                 <h4>Contactanos</h4>
                 <a href="tel:+543804690203">+54 3804 690203</a>
                 <a href="mailto:obemasa.cd@gmail.com">obemasa.cd@gmail.com</a>
