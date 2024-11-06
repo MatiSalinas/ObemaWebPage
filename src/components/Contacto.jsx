@@ -33,7 +33,7 @@ function Contacto(){
     return (
         <div className="containerContacto">
             <div className="containerTopContacto">
-            <video autoPlay loop muted className="videoLandScape">
+            <video className="videoLandScape" autoPlay loop muted playsinline  disablePictureInPicture  >
                     <source src={video} type="video/mp4"/>
                 </video>
                 <h1>Contactanos</h1>
@@ -57,7 +57,7 @@ function Contacto(){
             <div className="containerContactoUbi">
                 <img src={logo} alt="logo Obema" className="logoFondoUbi" />
                 <div className="donde">
-                    <h2>Donde encontrarnos?</h2>
+                    <h2>¿Dónde encontrarnos?</h2>
                     <p>Visítanos para conocer nuestros módulos para <br />campamentos mineros y turísticos, así como <br />nuestros servicios de construcción e industria.
                     </p>
                     <h2>Ubicación</h2>

@@ -24,7 +24,7 @@ function Inicio(){
     return (
         <div className="containerInicio">
             <div className="heroLandScape">
-                <video autoPlay loop muted className="videoLandScape">
+                <video autoPlay loop muted playsinline className="videoLandScape">
                     <source src={video} type="video/mp4"/>
                 </video>
                 <h1 className="tituloHero">  Diseño inteligente, <br />construcción conﬁable</h1>

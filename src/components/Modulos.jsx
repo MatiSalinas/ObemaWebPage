@@ -35,11 +35,11 @@ function Modulos(){
 
                 <div className="textoModuloTop">
                     <h1>Modulos Habitacionales</h1>
+                </div>
                     <div className="logoYp">
                         <img src={logo} alt="Logo Obema" className="logo" />
                         <p>Trabajamos a la medida de tus necesidades</p>
                     </div>
-                </div>
             </div>
             <div className="futuroModular">
                 <div className="lineaAzul"></div>
@@ -56,7 +56,7 @@ function Modulos(){
 
             <div className="ventajasBeneficios blanco">
                 <div className="lineaAzulVB"></div>
-                <h2>Ventajas & Beneficios</h2>
+                <h2>Ventajas y Beneficios</h2>
                 <p>De nuestros módulos habitacionales</p>
                 <div className="franjaSvgVB">
 
@@ -198,7 +198,6 @@ Perfectos para alojamientos en <br /> parques naturales o áreas de <br /> difí
             </div>
                     </div>
                 </div>
-                </div>
                 <div className="moduloTipologia">
                     <h3>Campamentos</h3>
                     <div className="carousel3" onMouseEnter={()=>setMouseModulos({...mouseModulos,3:true})} onMouseLeave={()=>setMouseModulos({...mouseModulos,3:false})} >
@@ -212,6 +211,7 @@ Fabricados con materiales <br /> duraderos y de fácil instalación, <br /> gara
                 </div>
             </div>
                     </div>
+                </div>
                 </div>
             </div>
 

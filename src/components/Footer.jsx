@@ -39,9 +39,9 @@ function Footer(){
         <footer>
             <form className="formFooter" onSubmit={handleSumbit} id='footer1'>
                 <label htmlFor="emailFooter"> Ingrese su correo electrónico aquí
-                    <input type="email" name="emailFooter" id="emailFooter" placeholder='Correo electrónico de contacto' value={emailInfo.email} onChange={(e)=>setEmailInfo({...emailInfo,email:e.target.value})}/>
+                    <input type="email" name="emailFooter" id="emailFooter" placeholder='Correo electrónico' value={emailInfo.email} onChange={(e)=>setEmailInfo({...emailInfo,email:e.target.value})}/>
                 </label>
-                <button type='submit' className='formFooterButton'>Enviar Consulta</button>
+                <button type='submit' className='formFooterButton'>Nostros te contactamos</button> 
             </form>
 
             <div className="redesFooter" id='footer2'>

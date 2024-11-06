@@ -16,13 +16,22 @@
   src:local("poppins"), url("./fonts/Poppins-Regular.ttf"), format('truetype'); font-weight: normal; font-style: normal; }
 html{
   overflow-x: hidden;
+
+}
+body{
+  width: 100vw;
 }
 *{
   margin: 0;
   padding: 0;
   font-family: 'openSans','poppins';
 }
-
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+video{
+  pointer-events: none;
+}
 h1, h4{
   font-family: 'openSans-Bold','poppins';
 }
@@ -78,6 +87,7 @@ nav{
 
 .containerInicio{
   height:fit-content;
+  overflow-x: hidden;
 }
 
 .heroLandScape{
@@ -161,11 +171,10 @@ nav{
 }
 .rubros{
   display: flex;
-  width: 100%;
+  width: 100vw;
   background-color: #CCCCCC;
   justify-content:space-around;
   align-items: center;
-  padding: 1rem;
   padding-top:3.4rem;
   gap: 2rem;
   height: fit-content;
@@ -274,15 +283,15 @@ nav{
 
 
 footer{
-  width: 99%;
+  width: 100vw;
   display: flex;
   background-color: #0D426D;
   justify-content: center;
   gap: 5rem;
   align-items: center;
   color: #f2f2f2;
-  padding: 1%;
   padding-left: 4rem;
+  overflow-x: hidden;
 }
 .logosRedesFooter{
   display: flex;
@@ -337,7 +346,7 @@ footer{
   color: #000;
   height:2rem;
   border-radius: 20px;
-  width: 20rem;
+  width: 16rem;
   padding-left: 10px;
   
 }
@@ -435,6 +444,9 @@ span{
 .nodoSup,.nodoInf{
   position: relative;
   z-index: 15;
+  -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
 
 }
 
@@ -597,6 +609,7 @@ span{
   justify-content: start;
   gap: 5rem;
   padding-left: 10vw;
+  overflow-x: hidden;
 }
 .imagenCasaModulo{
   background-color: #f2f2f2;
@@ -606,6 +619,7 @@ span{
 }
 .imagenCasaModulo .carousel__slide img{
   object-fit: fill;
+  overflow-x: hidden;
 }
 .infoMI{
   height: fit-content;
@@ -656,6 +670,7 @@ span{
   font-size: 1.2rem;
   font-family: 'openSans','poppins';
   text-align: center;
+  text-shadow: 1px 1px 1px #000;
 }
 .heroServicios h2{
   font-family: "openSans-EB",'poppins';
@@ -755,12 +770,13 @@ span{
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 2rem;
+  overflow-x: hidden;
 
 }
 .fondoTopPorfolio p{
   text-align: center;
   font-size: 1.3rem;
+  text-shadow: 1px 1px 1px #000;
 }
 .fondoTopPorfolio .botonLink{
   border: 1px solid white;
@@ -770,8 +786,10 @@ span{
   grid-template-columns: repeat(4, 1fr); 
   grid-template-rows: repeat(2, 1fr); 
   gap: 20px 20px; 
-  padding: 5rem;
   width: 60vw;
+  overflow-x: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .carousel1 { grid-area: 1 / 1 / 3 / 2; 
 }
@@ -834,6 +852,7 @@ span{
 .containerTopContacto p{
   font-size: 1.4rem;
   font-family: 'openSans','poppins';
+  text-shadow: 1px 1px 1px #000;
 }
 .contactoForm{
   padding: 1rem;
@@ -902,8 +921,8 @@ form input:not(textarea) {
   color: #fff;
   width: 100vw;
   height: 50vh;
-  gap: 1rem;
   z-index:0;
+  padding-top: 2rem;
 
 }
 .donde{
@@ -912,15 +931,14 @@ form input:not(textarea) {
   align-items: start;
   z-index: 2;
   gap: .8rem;
+  height: 39vh;
   
 }
 .mapa{
-  width: 40vw;
   height: 39vh;
   border-radius: 1rem;
   overflow: hidden;
-  z-index: 2;
-  
+  z-index: 2;  
 }
 .botonUbicacion{
   all: unset;
@@ -931,7 +949,9 @@ form input:not(textarea) {
   align-self: center;
   margin-top: 1rem;
   width: 8rem;
+  
   text-align: center;
+
 }
 .logoFondoUbi{
   z-index: 1;
@@ -940,6 +960,9 @@ form input:not(textarea) {
   padding: 3rem;
 }
 .containerModulosTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 60vh;
   overflow: hidden;
@@ -963,6 +986,7 @@ form input:not(textarea) {
 
   width: 100%;
   height: 100%;
+  
 }
 .containerModulosTop h1{
   
@@ -1005,6 +1029,8 @@ form input:not(textarea) {
   font-size: 1.2rem;
   font-family: 'openSans','poppins';
   width: 40vw;
+  margin-bottom: 1rem;
+
 }
 .F{
   margin-top: 2rem;
@@ -1019,7 +1045,7 @@ form input:not(textarea) {
   font-size: 2rem;
   font-family: 'openSans-EB','poppins';
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 .tipologias{
   margin-top: 3rem;
@@ -1049,7 +1075,7 @@ form input:not(textarea) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  max-width: 500px;
   margin-bottom: 2rem;
 }
 .moduloTipologia h3{
@@ -1057,6 +1083,7 @@ text-align: center;
 font-family: 'openSans-Bold','poppins';
 font-size: 1.8rem;
 margin-bottom: 2rem;
+height: 78px ;
 }
 .textoOcultoTipologia{
   font-family: 'openSans','poppins';
@@ -1338,7 +1365,8 @@ margin-bottom: 2rem;
 .formFooterButton:active{scale: 0.8;}
 
 #logoFooter{
-  width: 15rem;
+  width: 12rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1381,10 +1409,30 @@ a {
 
 #sloganFooter{
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
 }
 #accede{
   font-size: 1.37rem;
+}
+.logoYp{
+  width: 25vw;
+  position: absolute;
+  bottom: 3vh;
+  right: 37.5vw;
+  left: 37.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logoYp p {
+  min-width: max-content;
+ 
+}
+.logoYp .logo{
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 800px){
@@ -1460,6 +1508,7 @@ a {
   .fondoTopPorfolio p{
     font-size: 0.9rem;
     width: 80vw;
+    
   }
   .containerCarouselesPortfolio{
     display: flex;
@@ -1565,7 +1614,7 @@ a {
   bottom: 1px;
  }
  #emailFooter{
-  width: 80vw;
+  width: 70vw;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -1643,6 +1692,11 @@ a {
   margin-bottom: 200px;
 
 }
+.tituloHero{
+  font-size: 2rem;
+  width: 90vw;
+  margin-bottom: 5rem;
+}
  .franjaSuperior{width: 100%;
 gap: 3rem;
 align-items: flex-start; 
@@ -1696,7 +1750,14 @@ nav{
   width: 100vw;
   margin: 0;
   justify-content: space-evenly;
+  align-items: center;
   position: relative;
+}
+
+.menuHaburguesa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .secciones{
   margin: 0;
@@ -1722,11 +1783,19 @@ nav{
 nav .logo{
   width: 10rem;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo img{
+  height: 44px;
+  margin-top: 10px;
 }
 .menu-icon{
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
+  height: 44px;
 }
 .textoModuloTop h1{
   width: 80vw;
