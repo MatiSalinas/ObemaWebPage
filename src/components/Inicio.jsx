@@ -14,7 +14,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import React, { useCallback, useState } from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import { motion } from 'framer-motion'
+import { p } from 'framer-motion/client'
 function Inicio(){
+    const isMobile = window.innerWidth < 800;
     const [mouseModulos, setMouseModulos] = useState({1:false,2:false,3:false,4:false})
     const [mouseVentajas, setMouseVentaja] = useState({1:false,2:false,3:false,4:false,5:false})
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true },[Autoplay()])
@@ -64,7 +66,7 @@ function Inicio(){
 
             <div className="BloqueInicioPortfolio">
                 <div className="lineaAzul"></div>
-                <h1>Conocé nuestras obras, proyectos y servicios</h1>
+                <h1>Conocé nuestras obras,{isMobile ? (""):(<br />)} proyectos y servicios</h1>
                 <h2 id='accede'>Accedé a nuestro porfolio y conocé los proyectos más relevantes de <span>OBEMA SA.</span></h2>
                 <button type="button"></button>
                 <Link to="/portfolio" className='botonLink' >PORTFOLIO</Link>
@@ -314,7 +316,7 @@ function Inicio(){
                     Para conocer las distintas tipologías y especiﬁcaciones lo invitamos a  <br />
                     descargar el PDF o contactarnos para más información.
                     </p>
-                    <Link to="/modulos" className='botonLink' id='MIBL'>CÁTALOGO</Link>
+                    <Link to="/modulos" className='botonLink' id='MIBL'>CATÁLOGO</Link>
                 </div>
 
                 <div className="imagenCasaModulo">
