@@ -261,50 +261,52 @@ function Inicio(){
             </div> */}
             
             <div className="ventajasBeneficios">
-                <div className="lineaAzulVB"></div>
-                <h2>Ventajas y Beneficios</h2>
-                <p>De nuestros modulos habitacionales</p>
-                <div className="franjaSvgVB">
+    <div className="lineaAzulVB"></div>
+    <h2>Ventajas y Beneficios</h2>
+    <p>De nuestros módulos habitacionales</p>
 
-                    <div className="svgVB">
-                        <img src={Garantialogo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas,1:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas,1:false})} />
-                        <p>Rapidez y <br />Eficacía</p>
-                        </div>
-                    <div className="svgVB">
-                        <img src={facilidadlogo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas,2:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas,2:false})}  />
-                        <p>Económicas y<br />Duraderas</p>
-                        </div>
-                    <div className="svgVB">
-                        <img src={rayologo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas,3:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas,3:false})}  />
-                        <p>Eficiencia <br />Energética</p>
-                        </div>
-                    <div className="svgVB">
-                        <img src={Aislamientologo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas,4:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas,4:false})}  />
-                        <p>Aislamiento <br />Térmico y Acústico</p>
-                        </div>
-                    <div className="svgVB">
-                        <img src={resistencialogo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas,5:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas,5:false})}  />
-                        <p>Seguridad</p>
-                        </div>
-                </div>
-                <motion.div className="franjaTextoOculto" initial={{height:0, opacity:0}} animate={(mouseVentajas[1] || mouseVentajas[2] || mouseVentajas[3] || mouseVentajas[4] || mouseVentajas[5] ) ? {height:"5rem",opacity:1}:{height:"0rem", opacity:0}} transition={{duration:1}}>
-                <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC"}} animate={(mouseVentajas[1]) ? {color:"#000"}:{ color:"#CCCCCC"}} transition={{duration:1}}>
-                        <p>Se trata de proyectos fabricados en 60 DÍAS de construcción, (dependiendo la cantidad de m2) e instalados en pocos días, para su rápida puesta en marcha.</p>
-                        </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[2]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
-                        <p>Estas viviendas son rentables y duraderas, ofreciendo fácil mantenimiento a lo largo del tiempo.</p>
-                        </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[3]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
-                        <p>Proporcionan un gran ahorro energético y tienen un menor impacto ambiental. Son una opción sustentable y sostenible.</p>
-                        </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[4]) ? {color:"#000"}:{color:"#CCCCCC"}} transition={{duration:1}}>
-                        <p>Excelente aislamiento térmico y acústico, eliminan la condensación y previenen el anidamiento de roedores e insectos. Son no tóxicas e ignífugas.</p>
-                        </motion.div>
-                        <motion.div className="ocultoVentaja" initial={{color:"#CCCCCC"}} animate={(mouseVentajas[5]) ? {color:"#000"}:{ color:"#CCCCCC"}} transition={{duration:1}}>
-                        <p>No emiten llama, humo ni olor, asegurando un entorno seguro y saludable para sus habitantes.</p>
-                        </motion.div>
-                </motion.div>
-            </div>
+    <div className="franjaSvgVB">
+        <div className="svgVB">
+            <img src={Garantialogo} alt="garantiaLogo" className='VBsvg' onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 1:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 1:false})} onTouchStart={()=> setMouseVentaja({...mouseVentajas, 1:true})} onTouchEnd={()=> setMouseVentaja({...mouseVentajas, 1:false})}/>
+            <p>Rapidez y <br />Eficacia</p>
+            <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC" }} animate={(mouseVentajas[1]) ? { color:"#000" } : { color:"#CCCCCC" }} transition={{ duration:1 }}>
+                <p>Se trata de proyectos fabricados en 60 DÍAS de construcción, (dependiendo la cantidad de m2) e instalados en pocos días, para su rápida puesta en marcha.</p>
+            </motion.div>
+        </div>
+
+        <div className="svgVB" onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 2:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 2:false})} onTouchStart={()=> setMouseVentaja({...mouseVentajas, 2:true})} onTouchEnd={()=> setMouseVentaja({...mouseVentajas, 2:false})}>
+            <img src={facilidadlogo} alt="facilidadLogo" className='VBsvg' />
+            <p>Económicas y<br />Duraderas</p>
+            <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC" }} animate={(mouseVentajas[2]) ? { color:"#000" } : { color:"#CCCCCC" }} transition={{ duration:1 }}>
+                <p>Estas viviendas son rentables y duraderas, ofreciendo fácil mantenimiento a lo largo del tiempo.</p>
+            </motion.div>
+        </div>
+
+        <div className="svgVB" onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 3:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 3:false})}onTouchStart={()=> setMouseVentaja({...mouseVentajas, 3:true})} onTouchEnd={()=> setMouseVentaja({...mouseVentajas, 3:false})}>
+            <img src={rayologo} alt="rayoLogo" className='VBsvg' />
+            <p>Eficiencia <br />Energética</p>
+            <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC" }} animate={(mouseVentajas[3]) ? { color:"#000" } : { color:"#CCCCCC" }} transition={{ duration:1 }}>
+                <p>Proporcionan un gran ahorro energético y tienen un menor impacto ambiental. Son una opción sustentable y sostenible.</p>
+            </motion.div>
+        </div>
+
+        <div className="svgVB" onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 4:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 4:false})}onTouchStart={()=> setMouseVentaja({...mouseVentajas, 4:true})} onTouchEnd={()=> setMouseVentaja({...mouseVentajas, 4:false})}>
+            <img src={Aislamientologo} alt="aislamientoLogo" className='VBsvg' />
+            <p>Aislamiento <br />Térmico y Acústico</p>
+            <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC" }} animate={(mouseVentajas[4]) ? { color:"#000" } : { color:"#CCCCCC" }} transition={{ duration:1 }}>
+                <p>Excelente aislamiento térmico y acústico, eliminan la condensación y previenen el anidamiento de roedores e insectos. Son no tóxicas e ignífugas.</p>
+            </motion.div>
+        </div>
+
+        <div className="svgVB" onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 5:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 5:false})} onTouchStart={()=> setMouseVentaja({...mouseVentajas, 5:true})} onTouchEnd={()=> setMouseVentaja({...mouseVentajas, 5:false})}>
+            <img src={resistencialogo} alt="resistenciaLogo" className='VBsvg' />
+            <p>Seguridad</p>
+            <motion.div className="ocultoVentaja" initial={{ color:"#CCCCCC" }} animate={(mouseVentajas[5]) ? { color:"#000" } : { color:"#CCCCCC" }} transition={{ duration:1 }}>
+                <p>No emiten llama, humo ni olor, asegurando un entorno seguro y saludable para sus habitantes.</p>
+            </motion.div>
+        </div>
+    </div>
+</div>
 
             <div className="casaModulIndustrial">
 
