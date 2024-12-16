@@ -24,7 +24,7 @@ function Servicios (){
             <div className="cuadradoServicio" onMouseEnter={()=>setMouseModulos({...mouseModulos,1:true})} onMouseLeave={()=>setMouseModulos({...mouseModulos,1:false})} >
                 <div className="superiorCuadradoServicio">
                     <div className="tituloTextoServicio">
-                        <h3>Construccion</h3>
+                        <h3>Construcción</h3>
                         <motion.p initial={{opacity:1,height:"1rem"}} animate={(mouseModulos[1]) ? {height:'0rem' , opacity:0}:{height:'1rem' , opacity:1}}>Ejecutamos proyectos integrales con los más altos estándares de calidad</motion.p>
                     </div>
                         <img src={construccion} alt="" className='imgContainerServicios'/>

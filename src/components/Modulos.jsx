@@ -34,7 +34,7 @@ function Modulos(){
                 </div>
 
                 <div className="textoModuloTop">
-                    <h1>Modulos Habitacionales</h1>
+                    <h1>Módulos Habitacionales</h1>
                 </div>
                     <div className="logoYp">
                         <img src={logo} alt="Logo Obema" className="logo" />

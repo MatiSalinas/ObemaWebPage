@@ -808,7 +808,7 @@ span{
 .carousel4 { grid-area: 2 / 2 / 3 / 4; }
 .carousel5 { grid-area: 1 / 4 / 3 / 5; }
 
-.carousel1 ,.carousel2,.carousel3,.carousel4,.carousel5,.moduloTuristico,.imagenModuloIndustrial,.imagenCasaModulo{
+.carousel1 ,.carousel2,.carousel3,.carousel4,.carousel5,.moduloTuristico,.imagenModuloIndustrial,.imagenCasaModulo,.carouselPortfolio{
   overflow: hidden;
   position: relative;
 }
@@ -1381,6 +1381,32 @@ height: 78px ;
   margin-top: 1rem;
 }
 
+.cuadradosPortfolio {
+  width: 100vw;
+  display: flex;
+  height: fit-content;
+  padding-top: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 200px;
+  background-color: #f2f2f2;
+}
+
+.cuadradoPortfolio {
+  width: 614px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-basis: 50%;
+}
+
+.cuadradoPortfolio p {
+  width: 614px;
+  color: #5d5d5d;
+}
+
 @media only screen and (max-width: 1400px) {
 .containerContacto{
   background-color: #000;
@@ -1482,6 +1508,15 @@ a {
     
 
   }
+
+  .cuadradoPortfolio {
+    width: 99vw;
+}
+
+.cuadradoPortfolio p, .cuadradoPortfolio h2 {
+  width: 99vw;
+  text-align: center;
+}
   .cuadradoServicio{
     
     max-width:90vw;
