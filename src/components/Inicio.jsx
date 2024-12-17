@@ -12,7 +12,7 @@ import Aislamientologo from '/svgs/Aislamientologo.svg'
 import resistencialogo from '/svgs/resitencialogo.svg'
 import scrollHint from '/svgs/swipe-left.svg'
 import useEmblaCarousel from 'embla-carousel-react'
-import React, {useState,useRef } from 'react'
+import React, {useState,useRef,useCallback } from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import { motion } from 'framer-motion'
 import { useDraggable } from "react-use-draggable-scroll";
@@ -27,6 +27,13 @@ function Inicio(){
 
     const ref = useRef(); // We will use React useRef hook to reference the wrapping div:
     const { events } = useDraggable(ref); // Now we pass the reference to the useDraggable hook:
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+      }, [emblaApi])
+    
+      const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+      }, [emblaApi])
     return (
         <div className="containerInicio">
             <div className="heroLandScape">
@@ -90,6 +97,12 @@ function Inicio(){
                         
                 </div>
             </div>
+            <button className="carousel__prev" onClick={scrollPrev}>
+                    &lt;
+            </button>
+            <button className="carousel__next" onClick={scrollNext}>
+                    &gt;
+            </button>
             </div>
 
             <div className="AboutUs">

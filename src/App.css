@@ -1263,136 +1263,120 @@ height: 78px ;
 .textoPunto{
   position: absolute;
   font-size: 1.4rem;
-  font-family: "openSans",'poppins';
+  font-family: openSans, poppins;
   height: 2.1rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: hsla(0, 0%, 6%, 0.603);
-  color: #f2f2f2;
+  color: #000;
   text-align: center;
+  padding-right: 2rem;
 }
 
 #tPuntoTecho1{
-  left: -85px;
-  top: 10px;
+  left:-200px;top:0;
   z-index: 4;
 }
 #tPuntoTecho2{
-  left: -100px;
-  top: 50px;
+  left:-200px;top:20px;
   z-index: 4;
 }
 #tPuntoTecho3{
   height: 4rem;
   text-align: right;
-  left: -220px;
-  top: 180px;
+  left:-230px;top:40px;
   z-index: 4;
 
 }
 #tPuntoTecho4{
   height: 4rem;
   text-align: right;
-  left: 270px;
-  top: 180px;
+  left:-230px;top:60px;
   z-index: 1;
 
 }
 #tPuntoTecho5{
   height: 4rem;
   text-align: right;
-  left: 270px;
-  top: 180px;
+  left:-230px;top:80px;
   z-index: 1;
 
 }
 #tPuntoPiso1{
   height: 2rem;
-  left: 10px;
-  bottom: 10px;
+  left:-230px;top:680px;
   z-index: 1;
 
 }
 #tPuntoPiso2{
   height: 4rem;
   text-align: right;
-  left: -70px;
-  bottom: 100px;
+  left:-230px;bottom:20px;
   z-index: 1;
 
 }
 #tPuntoPiso3{
   height: 2rem;
-  left: -150px;
-  bottom: 160px;
+  left:-230px;bottom:40px;
   z-index: 1;
 
 }
 #tPuntoPiso4{
   height: 2rem;
-  left: -180px;
-  bottom: 210px;
+  left:-200px;bottom:60px;
   z-index: 1;
 
 }
 #tPuntoPiso5{
   height: 2rem;
-  left: -180px;
-  bottom: 240px;
+  left:-230px;bottom:80px;
   z-index: 1;
 
 }
 #tPuntoPared1{
   height: 4rem;
   text-align: right;
-  right: 60px;
-  bottom: 140px;
+  right:-100px;bottom:50px;
   z-index: 1;
 
 }
 #tPuntoPared2{
   height: 4rem;
   text-align: right;
-  right: 20px;
-  bottom: 60px;
+  right:-100px;bottom:0;
   z-index: 1;
 
 }
 #tPuntoPared3{
   height: 4rem;
   text-align: right;
-  right: -90px;
-  bottom: 20px;
+  right:-140px;bottom:-40px;
   z-index: 1;
 
 }
 #tPuntoPared4{
   height: 4rem;
   text-align: right;
-  right: 250px;
-  bottom: 140px;
+  right:-100px;bottom:0;
   z-index: 3;
 
 }
 #tPuntoVentana2{
   height: 6rem;
-  right: -80px;
-  bottom: 370px;
+  right:-110px;top:0;
   z-index: 3;
 
 }
 #tPuntoVentana3{
   height: 4rem;
-  right: -140px;
-  bottom: 370px;
+  right:-140px;top:40px;
   z-index: 3;
 
 }
 #tPuntoVentana1{
   height: 4rem;
-  left: -290px;
+  left:-100px;
   text-align: right;
-  top: 205px;
+  bottom: 0;
   z-index: 3;
 
 }
@@ -1452,6 +1436,21 @@ footer a, footer h4, footer button, footer label {
 
 .scroll-hint img {
   height: 50px;
+}
+
+.carousel__next, .carousel__prev {
+  all: unset;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  text-shadow: 2px 2px 1px var(--shadow-color);
+}
+.carousel__prev{
+  left: 1%;
+}
+.carousel__next{
+  right: 1%;
 }
 
 @media only screen and (max-width: 1500px) {
