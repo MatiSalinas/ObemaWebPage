@@ -966,6 +966,7 @@ form input:not(textarea) {
   gap: .8rem;
   height: 39vh;
   width: 600px;
+  padding-bottom: 2rem;
 }
 .mapa{
   height: 39vh;
@@ -1630,11 +1631,12 @@ a {
 
   .logoYp .logo{
     width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+
   }
   .logoYp p{
     width: 80vw;
+    font-size: .85rem;
+    margin-top: -30px;
   }
   .futuroModular p {
     font-size: 0.9rem;

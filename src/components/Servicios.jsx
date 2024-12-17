@@ -34,7 +34,7 @@ function Servicios (){
                     <div className="textoOcultoServicio"  style={(mouseModulos[1])? {opacity:1} : {opacity:0}}>
                         OBEMA se especializa <br /> en la construcción de obras de gran envergadura, <br />  priorizando la calidad,  seguridad <br /> y  el cumplimiento de los plazos establecidos <br /> Nuestro equipo profesional garantiza <br /> resultados eficientes y duraderos  <br />en cada proyecto que emprendemos
                     </div>
-                    <img src="/images/servicios/Construccion-750.png" className='imgServicio' />
+                    <img src="/images/servicios/CONSTRUCCION-NUEVA.png" className='imgServicio' />
                 </div>
             
             </div>
@@ -51,7 +51,7 @@ function Servicios (){
             
                     <div className="textoOcultoServicio"  style={(mouseModulos[2])? {opacity:1} : {opacity:0}}>OBEMA se especializa en la <br /> construcción de módulos habitacionales para la minería, <br /> diseñados para proporcionar comodidad <br /> y funcionalidad en entorno exigentes. <br /> Nuestro compromiso con la calidad <br /> y la seguridad asegura que cada módulo <br />cumpla con los estándares requeridos, <br /> ofreciendo un espacio seguro y eficiente para los trabajadores
                     </div>
-                    <img src="/images/servicios/Campamentos-750.png" className='imgServicio' />
+                    <img src="/images/servicios/CAMPAMENTO-NUEVA.png" className='imgServicio' />
                 </div>
             </div>
         </motion.div>

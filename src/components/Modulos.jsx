@@ -72,7 +72,7 @@ function Modulos(){
 
         <div className="svgVB" onMouseEnter={()=> setMouseVentaja({...mouseVentajas, 2:true})} onMouseLeave={()=> setMouseVentaja({...mouseVentajas, 2:false})}>
             <img src={facilidadlogo} alt="facilidadLogo" className='VBsvg' />
-            <p>Económicas y<br />Duraderas</p>
+            <p>Económicos y <br />Duraderos</p>
             <motion.div className="ocultoVentaja" initial={{ color:"#fff" }} animate={(mouseVentajas[2]) ? { color:"#000" } : { color:"#fff" }} transition={{ duration:1 }}>
                 <p>Estas viviendas son rentables y duraderas, ofreciendo fácil mantenimiento a lo largo del tiempo.</p>
             </motion.div>
