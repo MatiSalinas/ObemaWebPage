@@ -10,6 +10,7 @@ import facilidadlogo from '/svgs/facilidadlogo.svg'
 import rayologo from '/svgs/rayologo.svg'
 import Aislamientologo from '/svgs/Aislamientologo.svg'
 import resistencialogo from '/svgs/resitencialogo.svg'
+import scrollHint from '/svgs/swipe-left.svg'
 import useEmblaCarousel from 'embla-carousel-react'
 import React, {useState,useRef } from 'react'
 import Autoplay from 'embla-carousel-autoplay'
@@ -32,48 +33,48 @@ function Inicio(){
                 <video autoPlay loop muted playsInline className="videoLandScape">
                     <source src={video} type="video/mp4"/>
                 </video>
-                <h1 className="tituloHero">  Diseño inteligente, <br />construcción conﬁable</h1>
-                <p>Trabajamos a la medida de tus necesidades</p>
-                <div className="botonesLandScape">
+                <motion.h1 initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="tituloHero">  Diseño inteligente, <br />construcción conﬁable</motion.h1>
+                <motion.p initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}}>Trabajamos a la medida de tus necesidades</motion.p>
+                <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="botonesLandScape">
                 <Link to='/portfolio' className='botonLS'>CONOCE MAS SOBRE NOSOTROS</Link >
                 <Link to='/contacto' className='botonLS'>CONTACTANOS</Link >
-                </div>
+                </motion.div>
             </div>
             
             <div className="franjaGris"></div>
             <div className="rubros">
-            <div className="rubroItem">
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="rubroItem">
                 <div className="imgContainer"><img src={construccion} alt="Construcción" /></div>
                 <h3>Construcción</h3>
                 <p className="rubroP">Especializados en la ejecución de obras de infraestructura ofreciendo soluciones integrales y de calidad.</p>
-            </div>
-            <div className="rubroItem">
+            </motion.div>
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}}  transition={{duration:1}} className="rubroItem">
                 <div className="imgContainer"><img src={mineria} alt="Campamentos" /></div>
                 <h3>Campamentos</h3>
                 <p className="rubroP">Ofrecemos soluciones integrales para proyectos mineros, enfocándonos en la construcción de infraestructuras seguras y eficientes.</p>
-            </div>
-            <div className="rubroItem">
+            </motion.div>
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="rubroItem">
                 <div className="imgContainer"><img src={industria} alt="Industria" /></div>
                 <h3>Industria</h3>
                 <p className="rubroP">Proporcionamos soluciones de construcción para el sector industrial, enfocándonos en la creación de infraestructuras funcionales y seguras.</p>
-            </div>
-            <div className="rubroItem">
+            </motion.div>
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="rubroItem">
                 <div className="imgContainer" ><img src={vial} alt="Vial" id='cono' /></div>
                 <h3>Vial</h3>
                 <p className="rubroP">Transformamos la movilidad a través de nuestras soluciones de construcción vial, garantizando la seguridad y comodidad de todos los usuarios.</p>
-            </div>
+            </motion.div>
 </div>
 
 
 
 
-            <div className="BloqueInicioPortfolio">
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="BloqueInicioPortfolio">
                 <div className="lineaAzul"></div>
                 <h1>Conocé nuestras obras,{isMobile ? (""):(<br />)} proyectos y servicios</h1>
                 <h2 id='accede'>Accedé a nuestro porfolio y conocé los proyectos más relevantes de <span>OBEMA SA.</span></h2>
                 <button type="button"></button>
                 <Link to="/portfolio" className='botonLink' >PORTFOLIO</Link>
-            </div>
+            </motion.div>
 
             <div className="moduloTuristico">
             <div className="carousel__viewport" ref={emblaRef}>
@@ -82,10 +83,10 @@ function Inicio(){
                         <div className="carousel__slide"><img src="/images/carouselInicio/2.jpg" /></div>
                         <div className="carousel__slide"><img src="/images/carouselInicio/3.jpg" /></div>
                         <div className="carousel__slide"><img src="/images/carouselInicio/4.jpg" /></div>
-                        <div className="carousel__slide"><img src="/images/carouselInicio/5.jpg" /></div>
-                        <div className="carousel__slide"><img src="/images/carouselInicio/6.jpg" /></div>
-                        <div className="carousel__slide"><img src="/images/carouselInicio/7.jpg" /></div>
-                        <div className="carousel__slide"><img src="/images/carouselInicio/8.jpg" /></div>
+                        <div className="carousel__slide"><img src="/images/carouselInicio/5A.jpg" /></div>
+                        <div className="carousel__slide"><img src="/images/carouselInicio/6A.jpg" /></div>
+                        <div className="carousel__slide"><img src="/images/carouselInicio/7A.jpg" /></div>
+                        <div className="carousel__slide"><img src="/images/carouselInicio/8A.jpg" /></div>
                         
                 </div>
             </div>
@@ -93,7 +94,7 @@ function Inicio(){
 
             <div className="AboutUs">
                 <div className="lineaBlanca"></div>
-                <div className="quienesSomos">
+                <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="quienesSomos">
                     <h2>Quienes somos</h2>
                     <div className="quienesSomosP">
                         <span>OBEMA S.A</span> es una empresa nacida en la ciudad de La Rioja, Argentina, que colabora estrechamente con otras empresas para ofrecer soluciones a terceros en términos de proyectos, construcción y una amplia gama de trabajos relacionados con bienes y servicios para la minería. <br />
@@ -109,7 +110,7 @@ function Inicio(){
                             <p>Nuestra visión es innovar y generar productos sostenibles y respetuosos con el medio ambiente.</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 
             </div>
 
@@ -119,8 +120,10 @@ function Inicio(){
                 <h1>Nuestra Historia</h1>
                 <img src={logoAzul} alt="" className="azul" />
 
-                <div className="scrollHistoria"  {...events} ref={ref}>
-                    
+                <motion.div initial={{opacity:0,zoom:2,translateX:"200px"}} whileInView={{opacity:1,zoom:1,translateX:0}} viewport={{once:true}} transition={{duration:1}} className="scrollHistoria"  {...events} ref={ref}>
+                        <div className="scroll-hint">
+                            <motion.img src={scrollHint}  initial={{opacity:1}} whileInView={{opacity:0, translateX:"-200px"}} viewport={{once:true}} transition={{duration:10}} />
+                        </div>
                         <div className="franjaSuperior">
                             <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,1:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,1:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,1:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,1:false})}>
                                     <motion.img src="/images/historia/1Cocina-SUBOFICIALES.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[1]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
@@ -213,7 +216,7 @@ function Inicio(){
 
 
                             <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,20:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,20:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,20:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,20:false})} >
-                            <motion.img src="/images/historia/12Recuperacion-PAISAJE-HIDRICO.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[20]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                            <motion.img src="/images/historia/20-Planta-OBEMA.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[20]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
                                 <p id="ultimoPnodo">2024 Planta Industrial OBEMA SA - La Rioja Capital</p>
                                 <div className="circuloNodo" >
                                     <div className="circulo"></div>
@@ -222,9 +225,9 @@ function Inicio(){
                             </div>
 
 
-                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,7:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,7:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,7:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,7:false})} >
-                            <motion.img src="/images/historia/12Recuperacion-PAISAJE-HIDRICO.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[7]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
-                                <p id='ultimoPnodo'>Recuperación de paisajes hídricos y saneamiento rio tajamar</p>
+                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,22:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,22:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,22:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,22:false})} >
+                            <motion.img src="/images/historia/22-Nueva-sucursal-Banco-Rioja.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[22]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                            <p id="ultimoPnodo">Nueva sucursal Banco Rioja</p>
                                 <div className="circuloNodo" >
                                     <div className="circulo"></div>
                                     <div className="lineaCirculo"></div>
@@ -232,9 +235,9 @@ function Inicio(){
                             </div>
 
 
-                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,7:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,7:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,7:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,7:false})} >
-                            <motion.img src="/images/historia/12Recuperacion-PAISAJE-HIDRICO.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[7]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
-                                <p id='ultimoPnodo'>Recuperación de paisajes hídricos y saneamiento rio tajamar</p>
+                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,24:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,24:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,24:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,24:false})} >
+                            <motion.img src="/images/historia/24-Reparacion-y-reemplazo-tuberia-de-acero.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[24]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                            <p id="ultimoPnodo">Reparación y reemplazo de tubería de acero en acueducto del Salado - Departamento Juan Facundo Quiroga</p>
                                 <div className="circuloNodo" >
                                     <div className="circulo"></div>
                                     <div className="lineaCirculo"></div>
@@ -242,9 +245,9 @@ function Inicio(){
                             </div>
 
 
-                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,8:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,8:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,8:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,8:false})} >
-                            <motion.img src="/images/historia/14-Plan-de-asfaltado-Llano-Riojanos.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[8]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
-                                <p id="ultimoPnodo">Plan de asfaltado - Zona de los Llanos Riojanos </p>
+                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,26:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,26:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,26:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,26:false})} >
+                            <motion.img src="/images/historia/26-Limpieza-de-rios.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[26]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                            <p id="ultimoPnodo">Limpieza de Ríos - Llanos de La Rioja</p>
                                 <div className="circuloNodo" >
                                     <div className="circulo"></div>
                                     <div className="lineaCirculo"></div>
@@ -252,9 +255,9 @@ function Inicio(){
                             </div>
 
 
-                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,7:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,7:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,7:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,7:false})} >
-                            <motion.img src="/images/historia/12Recuperacion-PAISAJE-HIDRICO.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[7]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
-                                <p id='ultimoPnodo'>Recuperación de paisajes hídricos y saneamiento rio tajamar</p>
+                            <div className="nodoSup" onMouseEnter={()=>setHistoriaHover({...historiaHover,28:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,28:false})} onTouchStart={()=>setHistoriaHover({...historiaHover,28:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,28:false})} >
+                            <motion.img src="/images/historia/28-Camino-al-salado.jpg" alt="Cocina SubOficiales"  className='ImagenHistoria' initial={{opacity:0, height:0}} animate={(historiaHover[28]) ? {height:"200px", width:"200px", opacity:1, y:0, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                            <p id="ultimoPnodo">Camino al Salado</p>
                                 <div className="circuloNodo" >
                                     <div className="circulo"></div>
                                     <div className="lineaCirculo"></div>
@@ -306,6 +309,8 @@ function Inicio(){
                                     <p>Defensas y protección <br />de márgenes Del Bermejo </p>
                                     </div>
                             </div>
+
+                            
                             <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,13:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,13:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,13:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,13:false})}>
                             <motion.img src="/images/historia/13-SERVICIOS-NACION.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[13]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
                                     <div className="circuloNodo">
@@ -314,8 +319,100 @@ function Inicio(){
                                     <p>Presentación de proyectos <br />Subsecretaria de recursos hídricos <br />de la Nación </p>
                                     </div>
                             </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,15:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,15:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,15:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,15:false})}>
+                            <motion.img src="/images/historia/15-Administracion-OBEMA.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[15]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>OBEMA SA – Administración </p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,17:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,17:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,17:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,17:false})}>
+                            <motion.img src="/images/historia/17-Revestimiento-acueducto.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[17]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Revestimiento acueducto en hormigón armado</p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,19:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,19:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,19:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,19:false})}>
+                            <motion.img src="/images/historia/19-Concejo-deli.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[19]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Readecuación y puesta en valor en oficinas del Concejo Deliberante - Municipalidad de La Rioja </p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,21:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,21:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,21:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,21:false})}>
+                            <motion.img src="/images/historia/21-Muni-bacheo.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[21]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Plan de bacheo Municipio de La Ciudad Capital de La Rioja </p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,23:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,23:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,23:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,23:false})}>
+                            <motion.img src="/images/historia/23-Camino-de-reparacion-toma-el-salado.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[23]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Camino de servicio toma del Salado</p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,25:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,25:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,25:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,25:false})}>
+                            <motion.img src="/images/historia/25-Readecuacion-predio.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[25]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Readecuacion de Predio Municipal - Departamento Juan Facundo Quiroga </p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,27:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,27:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,27:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,27:false})}>
+                            <motion.img src="/images/historia/27-Acueducto-el-portezuelo.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[27]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Acueducto El portezuelo Santa María 18 km</p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,29:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,29:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,29:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,29:false})}>
+                            <motion.img src="/images/historia/29-Puesta-a-punto-Club-Chilecito.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[29]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Puesta en valor Atlético Chilecito - Baños, vestuarios, tribunas e iluminación.</p>
+                                    </div>
+                            </div>
+
+
+                            <div className="nodoInf" onMouseEnter={()=>setHistoriaHover({...historiaHover,30:true})} onMouseLeave={()=>setHistoriaHover({...historiaHover,30:false})}onTouchStart={()=>setHistoriaHover({...historiaHover,30:true})} onTouchEnd={()=>setHistoriaHover({...historiaHover,30:false})}>
+                            <motion.img src="/images/historia/30-Nucelo-centro-administrativo.jpg" alt="Cocina SubOficiales"  className='ImagenHistoriaInferior' initial={{opacity:0, height:0}} animate={(historiaHover[30]) ? {height:"200px", width:"200px", opacity:1, y:-10, borderRadius:"10px"} : {height:"0px",width:"0px",opacity:0,y:-80,borderRadius:"50%"}} transition={{duration:0.5}}/>
+                                    <div className="circuloNodo">
+                                        <div className="lineaCirculo"></div>
+                                        <div className="circulo"></div>
+                                        <p>Construcción de Núcleo de escalera en Nuevo Centro Administrativo Provincial La Rioja</p>
+                                    </div>
+                            </div>
+
+
                         </div>
-                </div>
+                </motion.div>
                 {/* <h2>Accedé a nuestro portfolio y conocé los proyectos más <br />relevantes de <span>OBEMA SA.</span>
                 </h2>
                 <Link to="/portfolio" className='botonLink' >CONOCE MAS</Link> */}
@@ -395,7 +492,7 @@ function Inicio(){
 
             <div className="casaModulIndustrial">
 
-                <div className="infoMI">
+                <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="infoMI">
                     <div className="lineaAzulMC"></div>
                     <h2>Un nuevo estilo de vida</h2>
                     <p>Nuestras casas modulares se adaptan a diversos estilos de vida y  <br />
@@ -404,7 +501,7 @@ function Inicio(){
                     descargar el PDF o contactarnos para más información.
                     </p>
                     <Link to="/modulos" className='botonLink' id='MIBL'>CATÁLOGO</Link>
-                </div>
+                </motion.div>
 
                 <div className="imagenCasaModulo">
                 <div className="carousel__viewport" ref={emblaRef3}>

@@ -57,7 +57,7 @@ function Footer(){
             <div className="contactoFooter" id='footer3'>
                 <h4>Contactanos</h4>
                 <a href="tel:+543804690203">+54 3804 690203</a>
-                <a href="mailto:obemasa.cd@gmail.com">obemasa.cd@gmail.com</a>
+                <a href="mailto:contacto@obemasa.com.ar">contacto@obemasa.com.ar</a>
             </div>
         </footer>
     )
