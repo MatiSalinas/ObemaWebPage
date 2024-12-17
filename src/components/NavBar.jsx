@@ -22,17 +22,17 @@ function NavBar(){
                 </div>
                 <motion.div className="secciones" initial={{opacity:0,width:0,}} animate={(isOpen) ? {display:'flex', height:"200px",width:"100%" ,opacity:1,y:0}:{display:'none',width:0,opacity:0,}} transition={{ease:"easeOut"}}>
                 
-                <Link to='/servicios' onClick={()=>setIsOpen(!isOpen)}>SERVICIOS</Link>
-                <Link to='/portfolio'  onClick={()=>setIsOpen(!isOpen)}>PORTFOLIO</Link >
-                <Link to='/modulos'  onClick={()=>setIsOpen(!isOpen)}>MODULOS</Link >
-                <Link to='/contacto'  onClick={()=>setIsOpen(!isOpen)}>CONTACTO</Link >
+                <Link to='/servicios' onClick={()=>setIsOpen(!isOpen)}>Servicios</Link>
+                <Link to='/portfolio'  onClick={()=>setIsOpen(!isOpen)}>Portfolio</Link >
+                <Link to='/modulos'  onClick={()=>setIsOpen(!isOpen)}>Módulos</Link >
+                <Link to='/contacto'  onClick={()=>setIsOpen(!isOpen)}>Contacto</Link >
                         </motion.div>
             </div>) : (
             <div className="secciones">
-            <Link to='/servicios'>SERVICIOS</Link>
-            <Link to='/portfolio' >PORTFOLIO</Link >
-            <Link to='/modulos' >MODULOS</Link >
-            <Link to='/contacto' >CONTACTO</Link >
+            <Link to='/servicios'>Servicios</Link>
+            <Link to='/portfolio' >Portfolio</Link >
+            <Link to='/modulos' >Módulos</Link >
+            <Link to='/contacto' >Contacto</Link >
         </div>
         )
     }

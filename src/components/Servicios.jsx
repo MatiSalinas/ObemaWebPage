@@ -20,7 +20,7 @@ function Servicios (){
         </div>
 
         <div className="cuadradosServiciosC">
-        <div className="wrapperServicio">
+        <motion.div className="wrapperServicio" initial={{opacity:0,translateX:"200px"}} whileInView={{opacity:1, translateX:"0"}} viewport={{once:true}} transition={{duration:1}}>
             <div className="cuadradoServicio" onMouseEnter={()=>setMouseModulos({...mouseModulos,1:true})} onMouseLeave={()=>setMouseModulos({...mouseModulos,1:false})} >
                 <div className="superiorCuadradoServicio">
                     <div className="tituloTextoServicio">
@@ -54,9 +54,9 @@ function Servicios (){
                     <img src="/images/servicios/Campamentos-750.png" className='imgServicio' />
                 </div>
             </div>
-        </div>
+        </motion.div>
 
-<div className="wrapperServicio">
+<motion.div className="wrapperServicio" initial={{opacity:0,translateX:"-200px"}} whileInView={{opacity:1, translateX:"0"}} viewport={{once:true}} transition={{duration:1}}>
     
             <div className="cuadradoServicio" onMouseEnter={()=>setMouseModulos({...mouseModulos,3:true})} onMouseLeave={()=>setMouseModulos({...mouseModulos,3:false})}>
                 <div className="superiorCuadradoServicio">
@@ -92,7 +92,7 @@ function Servicios (){
                     <img src="/images/servicios/Vial-750.png" className='imgServicio' />
                 </div>
             </div>
-</div>
+</motion.div>
 
 
         </div>

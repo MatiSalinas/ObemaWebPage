@@ -430,7 +430,7 @@ span{
   margin-top: 1rem;
 }
 .lineaHistoria{
-  width: 4500px;
+  width: 4800px;
   height: 6px;
   background-color: #0D426D;
 }
@@ -1567,6 +1567,10 @@ a {
 
   .cuadradoPortfolio {
     width: 99vw;
+}
+.moduloTuristico .carousel__slide img {
+  height: 400px;
+  object-position: center;
 }
 
 .cuadradoPortfolio p, .cuadradoPortfolio h2 {

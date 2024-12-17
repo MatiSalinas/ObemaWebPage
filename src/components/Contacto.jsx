@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '/svgs/logo.svg'
 import video from '/video/Portada.mp4'
+import {motion} from 'framer-motion'
 function Contacto(){
     const [emailInfo,setEmailInfo] = useState({nombre:"", email:"",consulta:""})
     const handleSumbit = async (e) =>{
@@ -39,7 +40,7 @@ function Contacto(){
                 <h1>Contactanos</h1>
                 <p>Contactanos y te asesoramos con tus proyectos.</p>
 
-                <form className="contactoForm" onSubmit={handleSumbit}>
+                <motion.form initial={{opacity:0,rotateY:30}} whileInView={{opacity:1, rotateY:0}} viewport={{once:true}} transition={{duration:1}} className="contactoForm" onSubmit={handleSumbit}>
                     <div className="labelInputForm">
                         <label htmlFor="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" className="inputForm" placeholder="Ingresa tu nombre aquí" value={emailInfo['nombre']} onChange={(e)=>setEmailInfo({...emailInfo,nombre:e.target.value})}/>
@@ -52,7 +53,7 @@ function Contacto(){
                         <textarea name="Consulta" id="consulta" placeholder="Escribí tu mensaje aquí" value={emailInfo['consulta']} onChange={(e)=>setEmailInfo({...emailInfo,consulta:e.target.value})}></textarea>
                     </div>
                     <button className="botonLink">ENVIAR</button>
-                </form>
+                </motion.form>
             </div>
             <div className="containerContactoUbi">
                 <img src={logo} alt="logo Obema" className="logoFondoUbi" />

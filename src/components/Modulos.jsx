@@ -33,15 +33,15 @@ function Modulos(){
             </div>
                 </div>
 
-                <div className="textoModuloTop">
+                <motion.div className="textoModuloTop" initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}}>
                     <h1>Módulos Habitacionales</h1>
-                </div>
-                    <div className="logoYp">
+                </motion.div>
+                    <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="logoYp">
                         <img src={logo} alt="Logo Obema" className="logo" />
                         <p>Trabajamos a la medida de tus necesidades</p>
-                    </div>
+                    </motion.div>
             </div>
-            <div className="futuroModular">
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="futuroModular">
                 <div className="lineaAzul"></div>
                 <h2>Tu futuro, modular</h2>
                 <p>Nuestras casas modulares ofrecen soluciones rápidas y eﬁcientes, <br />
@@ -52,9 +52,9 @@ function Modulos(){
                 comprometer la calidad.
                 </p>
                 <div className="lineaAzul"></div>
-            </div>
+            </motion.div>
 
-            <div className="ventajasBeneficios blanco">
+            <motion.div initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="ventajasBeneficios blanco">
     <div className="lineaAzulVB"></div>
     <h2>Ventajas y Beneficios</h2>
     <p>De nuestros módulos habitacionales</p>
@@ -101,7 +101,7 @@ function Modulos(){
         </div>
     </div>
     <div className="lineaAzul F"></div>
-</div>
+</motion.div>
 
             <div className="sistemaConstructivo">
                 <h2>Sistema Constructivo</h2>
@@ -165,7 +165,7 @@ function Modulos(){
                 </div>
             </div>
 
-            <div className="tipologias">
+            <motion.div  initial={{opacity:0,rotateX:30}} whileInView={{opacity:1, rotateX:0}} viewport={{once:true}} transition={{duration:1}} className="tipologias">
                 <div className="lineaAzul F"></div>
                 <h2>Tipologías</h2>
                 <div className="tipologias2modulos">
@@ -178,8 +178,8 @@ Ideales para quienes buscan una <br /> solución habitacional ágil sin <br /> c
 </div>
                     <div className="carousel__viewport" ref={emblaRef2}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/Habitacionales/1.png" /></div>
-                <div className="carousel__slide"><img src="/images/Habitacionales/2.png" /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/HABITACIONALES-2.png" /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/HABITACIONALES.png" /></div>
                 </div>
             </div>
                     </div>
@@ -194,8 +194,8 @@ Perfectos para alojamientos en <br /> parques naturales o áreas de <br /> difí
 </div>
                     <div className="carousel__viewport" ref={emblaRef3} >
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/ModulosTuristicos/1.png" /></div>
-                <div className="carousel__slide"><img src="/images/ModulosTuristicos/2.png" /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/TURISTICOS.png.jpg"  /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/TURISTICOS-2.png.jpg"  /></div>
                 </div>
             </div>
                     </div>
@@ -208,14 +208,14 @@ Fabricados con materiales <br /> duraderos y de fácil instalación, <br /> gara
 </div>
                     <div className="carousel__viewport" ref={emblaRef4}>
                 <div className="carousel__container">
-                <div className="carousel__slide"><img src="/images/Campamentos/1.png" /></div>
-                <div className="carousel__slide"><img src="/images/Campamentos/2.png" /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/CAMPAMENTO-1.jpg" /></div>
+                <div className="carousel__slide"><img src="/images/Modulos/carouseles/CAMPAMENTO-2.jpg" /></div>
                 </div>
             </div>
                     </div>
                 </div>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     )
